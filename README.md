@@ -7,7 +7,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=Homemade+Apple&size=25&pause=1000&color=D4C648&center=true&random=false&width=600&height=75&lines=Always+full+of+enthusiasm+and+hope." alt="Typing SVG: Always full of enthusiasm and hope." />
 </a>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Ma+Shan+Zheng&size=25&pause=1000&color=FFFFFF&center=true&width=600&height=75&lines=%E5%91%80%E5%98%BF%EF%BC%81%E8%BF%99%E9%87%8C%E6%98%AF%E6%B8%A1%E7%9A%84+G+i+t+h+u+b+%E5%93%9F%EF%BC%81%E6%9D%A5%E5%B9%B2%E5%98%9B%E7%9A%84%EF%BC%9F%F0%9F%A4%97)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Ma+Shan+Zheng&size=25&pause=1000&color=FFFFFF&center=true&width=600&height=75&lines=%E5%91%80%E5%98%BF%EF%BC%81%E8%BF%99%E9%87%8C%E6%98%AF%E6%B8%A1%E7%9A%84%E5%B0%8F%E7%AA%9D+%E5%93%9F%EF%BC%81%E6%9D%A5%E5%B9%B2%E5%98%9B%E7%9A%84%EF%BC%9F%F0%9F%A4%97)](https://git.io/typing-svg)
 
 </div>
 
