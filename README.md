@@ -25,9 +25,3 @@
 ![Vue](https://img.shields.io/badge/Vue-42b883?style=flat&logo=vuedotjs&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
 </div>
-
-## 说明
-
-- README 只放公开项目和必要链接，不放额外私人联系方式。
-- 项目说明尽量保持简洁，细节以各仓库 README 为准。
-- 顶部视觉为仓库内静态 SVG，减少第三方图片加载失败时的干扰。
