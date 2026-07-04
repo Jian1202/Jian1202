@@ -1,6 +1,6 @@
 <div align="center">
 
-# Jian
+![Jian 的 GitHub 小窝](./assets/profile-header.svg)
 
 你好，我是 Jian。
 
@@ -19,33 +19,45 @@
 
 ### [pomodoro-timer](https://github.com/Jian1202/pomodoro-timer)
 
-一个番茄钟小项目。先把计时、暂停、切换这些基础交互做顺。
+[![last commit](https://img.shields.io/github/last-commit/Jian1202/pomodoro-timer?style=flat&label=last%20commit)](https://github.com/Jian1202/pomodoro-timer)
+[![top lang](https://img.shields.io/github/languages/top/Jian1202/pomodoro-timer?style=flat&label=top%20lang)](https://github.com/Jian1202/pomodoro-timer)
+
+一个番茄钟。先把计时、暂停、切换这些基础交互做顺，后面想怎么长大还没急着定。
 
 `Vue` `JavaScript` `CSS`
 
 ### [my-agent](https://github.com/Jian1202/my-agent)
 
-从零试着写 Agent 的记录，主要看工具怎么接起来、流程怎么跑。
+[![stars](https://img.shields.io/github/stars/Jian1202/my-agent?style=flat&label=stars)](https://github.com/Jian1202/my-agent)
+[![last commit](https://img.shields.io/github/last-commit/Jian1202/my-agent?style=flat&label=last%20commit)](https://github.com/Jian1202/my-agent)
+
+从零试着搭 Agent 的小记录。重点不是做多炫，主要是把工具调用、执行流程这些东西摸清楚。
 
 `Python` `Agent`
 
-### [transformer-explainer-cn](https://github.com/Jian1202/transformer-explainer-cn) ![stars](https://img.shields.io/github/stars/Jian1202/transformer-explainer-cn?style=flat&label=stars)
+### [transformer-explainer-cn](https://github.com/Jian1202/transformer-explainer-cn)
 
-Transformer 可视化解释相关的中文学习整理，边看边补一点自己的理解。
+[![stars](https://img.shields.io/github/stars/Jian1202/transformer-explainer-cn?style=flat&label=stars)](https://github.com/Jian1202/transformer-explainer-cn)
+[![last commit](https://img.shields.io/github/last-commit/Jian1202/transformer-explainer-cn?style=flat&label=last%20commit)](https://github.com/Jian1202/transformer-explainer-cn)
 
-这个仓库能被一些人看到，有点意外，也挺有意思。
+围绕 Transformer Explainer 做的中文整理，边看边补一点自己的理解。
+
+这个仓库居然有人点 star，挺有意思。
 
 `JavaScript` `LLM` `Visualization`
 
 ### [Algorithm-Practice](https://github.com/Jian1202/Algorithm-Practice)
 
-刷题和题解笔记的仓库，方便之后回头找思路。
+[![stars](https://img.shields.io/github/stars/Jian1202/Algorithm-Practice?style=flat&label=stars)](https://github.com/Jian1202/Algorithm-Practice)
+[![last commit](https://img.shields.io/github/last-commit/Jian1202/Algorithm-Practice?style=flat&label=last%20commit)](https://github.com/Jian1202/Algorithm-Practice)
+
+刷题和题解笔记。主要给之后的自己回头找思路。
 
 `Algorithm` `Notes`
 
 ---
 
-## 常用的东西
+## 平时会碰的东西
 
 <div align="center">
 
