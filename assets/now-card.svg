@@ -1,0 +1,22 @@
+<svg width="860" height="240" viewBox="0 0 860 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">最近在摸</title>
+  <desc id="desc">AI、前端、Transformer 和算法相关的学习方向。</desc>
+  <rect width="860" height="240" rx="22" fill="#101418"/>
+  <rect x="28" y="28" width="804" height="184" rx="18" fill="#151B20" stroke="#2D343B"/>
+  <text x="54" y="78" fill="#F6F1E8" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="30" font-weight="750">最近在做</text>
+  <text x="54" y="106" fill="#8E99A5" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="15">AI、前端、Transformer、算法笔记</text>
+  <rect x="54" y="130" width="160" height="50" rx="14" fill="#101418" stroke="#2D343B"/>
+  <rect x="234" y="130" width="160" height="50" rx="14" fill="#101418" stroke="#2D343B"/>
+  <rect x="414" y="130" width="160" height="50" rx="14" fill="#101418" stroke="#2D343B"/>
+  <rect x="594" y="130" width="184" height="50" rx="14" fill="#101418" stroke="#2D343B"/>
+  <circle cx="80" cy="155" r="7" fill="#5DA8E8"/>
+  <circle cx="260" cy="155" r="7" fill="#5FBF9F"/>
+  <circle cx="440" cy="155" r="7" fill="#E0B84D"/>
+  <circle cx="620" cy="155" r="7" fill="#A78BFA"/>
+  <text x="96" y="161" fill="#D7DEE6" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="650">AI / Agent</text>
+  <text x="276" y="161" fill="#D7DEE6" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="650">Frontend</text>
+  <text x="456" y="161" fill="#D7DEE6" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="650">Transformer</text>
+  <text x="636" y="161" fill="#D7DEE6" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="650">Algorithm notes</text>
+  <path d="M728 74C752 74 772 94 772 118" stroke="#2D343B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M792 94C804 104 810 119 808 135" stroke="#E0B84D" stroke-width="2" stroke-linecap="round"/>
+</svg>
