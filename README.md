@@ -1,26 +1,49 @@
 <div align="center">
 
-![渡的小窝：公开项目、学习记录和阶段性实践的入口](./assets/profile-header.svg)
+# Jian
+
+你好，我是 Jian。
+
+这里放一些写过、改过、学过、还没完全收拾好的东西。
+
+不做很正式的展示页，能顺着项目看进去就行。
 
 [![GitHub](https://img.shields.io/badge/GitHub-Jian1202-181717?style=flat&logo=github&logoColor=white)](https://github.com/Jian1202)
 [![Location](https://img.shields.io/badge/Wuhan-Hubei-2A8AD4?style=flat)](https://github.com/Jian1202)
 
 </div>
 
-## 小窝入口
+---
 
-这个页面像一个公开小书架：把能看的项目、笔记和练习按用途摆好，方便从这里进入。
+## 放在这里的东西
 
-## 项目索引
+### [pomodoro-timer](https://github.com/Jian1202/pomodoro-timer)
 
-| 位置 | 项目 | 可以看到 | 关键词 |
-| --- | --- | --- | --- |
-| 工具间 | [pomodoro-timer](https://github.com/Jian1202/pomodoro-timer) | 一个番茄钟练习项目，也可承接个人效率工具方向的实验记录 | Vue / JavaScript / CSS |
-| 实验台 | [my-agent](https://github.com/Jian1202/my-agent) | LLM Agent 的基础实现练习，重点在工具调用与执行流程 | Python / Agent |
-| 资料夹 | [transformer-explainer-cn](https://github.com/Jian1202/transformer-explainer-cn) | Transformer 可视化解释项目的中文学习整理 | JavaScript / LLM / 可视化 |
-| 题库抽屉 | [Algorithm-Practice](https://github.com/Jian1202/Algorithm-Practice) | 算法题、解题思路和训练记录归档 | 算法 / 题解 / 笔记 |
+一个番茄钟小项目。先把计时、暂停、切换这些基础交互做顺。
 
-## 技术标签
+`Vue` `JavaScript` `CSS`
+
+### [my-agent](https://github.com/Jian1202/my-agent)
+
+从零试着写 Agent 的记录，主要看工具怎么接起来、流程怎么跑。
+
+`Python` `Agent`
+
+### [transformer-explainer-cn](https://github.com/Jian1202/transformer-explainer-cn)
+
+Transformer 可视化解释相关的中文学习整理，边看边补一点自己的理解。
+
+`JavaScript` `LLM` `Visualization`
+
+### [Algorithm-Practice](https://github.com/Jian1202/Algorithm-Practice)
+
+刷题和题解笔记的仓库，方便之后回头找思路。
+
+`Algorithm` `Notes`
+
+---
+
+## 常用的东西
 
 <div align="center">
 
