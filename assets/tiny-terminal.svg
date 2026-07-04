@@ -1,0 +1,10 @@
+<svg width="180" height="96" viewBox="0 0 180 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="小终端装饰">
+  <rect x="22" y="18" width="126" height="60" rx="12" fill="#151B20" stroke="#2D343B"/>
+  <circle cx="42" cy="36" r="4" fill="#E0B84D"/>
+  <circle cx="57" cy="36" r="4" fill="#5FBF9F"/>
+  <circle cx="72" cy="36" r="4" fill="#5DA8E8"/>
+  <path d="M43 55L55 63L43 71" stroke="#5DA8E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M67 70H105" stroke="#AEB8C2" stroke-width="3" stroke-linecap="round"/>
+  <path d="M154 34C163 39 166 49 161 58" stroke="#E0B84D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M158 65C150 74 137 77 126 72" stroke="#5FBF9F" stroke-width="2" stroke-linecap="round"/>
+</svg>
