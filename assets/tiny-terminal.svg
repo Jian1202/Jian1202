@@ -1,5 +1,5 @@
 <svg width="180" height="96" viewBox="0 0 180 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="小终端装饰">
-  <rect x="22" y="18" width="126" height="60" rx="12" fill="#151B20" stroke="#2D343B"/>
+  <path d="M22 18H148V78H22V18Z" fill="#151B20" stroke="#2D343B"/>
   <circle cx="42" cy="36" r="4" fill="#E0B84D"/>
   <circle cx="57" cy="36" r="4" fill="#5FBF9F"/>
   <circle cx="72" cy="36" r="4" fill="#5DA8E8"/>
