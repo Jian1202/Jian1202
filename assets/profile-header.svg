@@ -1,0 +1,19 @@
+<svg width="960" height="220" viewBox="0 0 960 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Jian 的 GitHub 小窝</title>
+  <desc id="desc">代码、笔记和一些还没完全整理好的东西。</desc>
+  <rect width="960" height="220" rx="22" fill="#101418"/>
+  <rect x="34" y="34" width="892" height="152" rx="18" fill="#151B20" stroke="#2D343B"/>
+  <circle cx="70" cy="62" r="5" fill="#E0B84D"/>
+  <circle cx="92" cy="62" r="5" fill="#5FBF9F"/>
+  <circle cx="114" cy="62" r="5" fill="#5DA8E8"/>
+  <path d="M54 88H906" stroke="#2D343B"/>
+  <text x="66" y="130" fill="#F6F1E8" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="50" font-weight="750" letter-spacing="0">Jian</text>
+  <text x="66" y="162" fill="#AEB8C2" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="18" font-weight="500" letter-spacing="0">代码、笔记和一些还没完全整理好的东西</text>
+  <rect x="642" y="106" width="184" height="46" rx="10" fill="#101418" stroke="#2D343B"/>
+  <rect x="660" y="122" width="44" height="8" rx="4" fill="#5DA8E8"/>
+  <rect x="714" y="122" width="28" height="8" rx="4" fill="#E0B84D"/>
+  <rect x="752" y="122" width="54" height="8" rx="4" fill="#5FBF9F"/>
+  <rect x="660" y="138" width="78" height="8" rx="4" fill="#2D343B"/>
+  <rect x="748" y="138" width="58" height="8" rx="4" fill="#2D343B"/>
+  <text x="66" y="202" fill="#69737D" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" letter-spacing="0">agent / frontend / transformer / notes</text>
+</svg>
