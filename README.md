@@ -13,6 +13,10 @@
 
 ---
 
+<p align="right">
+  <img src="./assets/corner-spark.svg" width="150" alt="小火花装饰" />
+</p>
+
 ## 最近在摸
 
 - AI：从 Agent、工具调用这些小东西开始拆。
@@ -22,19 +26,28 @@
 
 ---
 
-## 动态小状态
+<p align="left">
+  <img src="./assets/tiny-terminal.svg" width="140" alt="小终端装饰" />
+</p>
+
+## 小窝雷达
 
 <div align="center">
 
-[![profile updated](https://img.shields.io/github/last-commit/Jian1202/Jian1202?style=flat&label=%E5%B0%8F%E7%AA%9D%E4%B8%8A%E6%AC%A1%E6%94%B6%E6%8B%BE)](https://github.com/Jian1202/Jian1202)
-[![followers](https://img.shields.io/github/followers/Jian1202?style=flat&label=%E8%B7%AF%E8%BF%87%E7%9A%84%E4%BA%BA)](https://github.com/Jian1202?tab=followers)
-[![transformer stars](https://img.shields.io/github/stars/Jian1202/transformer-explainer-cn?style=flat&label=transformer-cn)](https://github.com/Jian1202/transformer-explainer-cn)
-[![agent stars](https://img.shields.io/github/stars/Jian1202/my-agent?style=flat&label=my-agent)](https://github.com/Jian1202/my-agent)
-[![pomodoro updated](https://img.shields.io/github/last-commit/Jian1202/pomodoro-timer?style=flat&label=pomodoro)](https://github.com/Jian1202/pomodoro-timer)
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Jian1202&theme=github_dark" width="820" alt="GitHub 贡献概览" />
+
+<br />
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Jian1202&theme=github_dark" width="405" alt="仓库语言分布" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jian1202&theme=github_dark" width="405" alt="GitHub 数据概览" />
 
 </div>
 
 ---
+
+<p align="right">
+  <img src="./assets/tiny-notes.svg" width="135" alt="小便签装饰" />
+</p>
 
 ## 常摸的工具
 
