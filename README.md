@@ -29,9 +29,11 @@
 
 `Python` `Agent`
 
-### [transformer-explainer-cn](https://github.com/Jian1202/transformer-explainer-cn)
+### [transformer-explainer-cn](https://github.com/Jian1202/transformer-explainer-cn) ![stars](https://img.shields.io/github/stars/Jian1202/transformer-explainer-cn?style=flat&label=stars)
 
 Transformer 可视化解释相关的中文学习整理，边看边补一点自己的理解。
+
+这个仓库能被一些人看到，有点意外，也挺有意思。
 
 `JavaScript` `LLM` `Visualization`
 
