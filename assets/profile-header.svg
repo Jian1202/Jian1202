@@ -1,23 +1,23 @@
-<svg width="960" height="230" viewBox="0 0 960 230" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">渡的 GitHub 主页</title>
-  <desc id="desc">公开项目、学习记录和阶段性实践的简洁索引。</desc>
-  <rect width="960" height="230" rx="18" fill="#0D1117"/>
-  <path d="M0 176H960" stroke="#30363D"/>
-  <path d="M74 54H886" stroke="#30363D"/>
-  <circle cx="80" cy="54" r="4" fill="#2A8AD4"/>
-  <circle cx="100" cy="54" r="4" fill="#D4C648"/>
-  <circle cx="120" cy="54" r="4" fill="#42B883"/>
-  <text x="74" y="116" fill="#F0F6FC" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="54" font-weight="700" letter-spacing="0">渡</text>
-  <text x="154" y="116" fill="#8B949E" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="18" font-weight="500" letter-spacing="0">Jian1202 / public notes</text>
-  <text x="74" y="151" fill="#C9D1D9" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="500" letter-spacing="0">公开项目、学习记录和阶段性实践</text>
-  <text x="74" y="205" fill="#8B949E" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" letter-spacing="0">AI Agent</text>
-  <text x="176" y="205" fill="#30363D" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" letter-spacing="0">/</text>
-  <text x="202" y="205" fill="#8B949E" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" letter-spacing="0">Frontend tools</text>
-  <text x="346" y="205" fill="#30363D" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" letter-spacing="0">/</text>
-  <text x="372" y="205" fill="#8B949E" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" letter-spacing="0">Deep learning</text>
-  <text x="510" y="205" fill="#30363D" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" letter-spacing="0">/</text>
-  <text x="536" y="205" fill="#8B949E" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" letter-spacing="0">Algorithms</text>
-  <path d="M812 84C842 84 866 108 866 138C866 168 842 192 812 192C782 192 758 168 758 138C758 108 782 84 812 84Z" stroke="#30363D" stroke-width="2"/>
-  <path d="M812 104C831 104 846 119 846 138C846 157 831 172 812 172C793 172 778 157 778 138C778 119 793 104 812 104Z" stroke="#2A8AD4" stroke-width="2"/>
-  <path d="M812 124C820 124 826 130 826 138C826 146 820 152 812 152C804 152 798 146 798 138C798 130 804 124 812 124Z" fill="#D4C648"/>
+<svg width="960" height="260" viewBox="0 0 960 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">渡的小窝</title>
+  <desc id="desc">公开项目、学习记录和阶段性实践的入口。</desc>
+  <rect width="960" height="260" rx="22" fill="#101418"/>
+  <rect x="36" y="34" width="888" height="192" rx="18" fill="#151B20" stroke="#2D343B"/>
+  <path d="M70 82H890" stroke="#2D343B"/>
+  <circle cx="78" cy="58" r="5" fill="#E0B84D"/>
+  <circle cx="100" cy="58" r="5" fill="#5FBF9F"/>
+  <circle cx="122" cy="58" r="5" fill="#5DA8E8"/>
+  <text x="70" y="126" fill="#F6F1E8" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="54" font-weight="750" letter-spacing="0">渡的小窝</text>
+  <text x="70" y="161" fill="#AEB8C2" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="18" font-weight="500" letter-spacing="0">Jian1202 / public notes</text>
+  <text x="70" y="197" fill="#D7DEE6" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="500" letter-spacing="0">公开项目、学习记录和阶段性实践的入口</text>
+  <rect x="634" y="108" width="214" height="74" rx="14" fill="#101418" stroke="#2D343B"/>
+  <path d="M656 136H826" stroke="#2D343B"/>
+  <path d="M656 159H826" stroke="#2D343B"/>
+  <rect x="666" y="122" width="58" height="14" rx="4" fill="#5DA8E8"/>
+  <rect x="736" y="122" width="42" height="14" rx="4" fill="#E0B84D"/>
+  <rect x="790" y="122" width="24" height="14" rx="4" fill="#5FBF9F"/>
+  <rect x="666" y="145" width="36" height="14" rx="4" fill="#5FBF9F"/>
+  <rect x="714" y="145" width="76" height="14" rx="4" fill="#5DA8E8"/>
+  <rect x="802" y="145" width="12" height="14" rx="4" fill="#E0B84D"/>
+  <text x="70" y="237" fill="#69737D" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" letter-spacing="0">agent / frontend / deep learning / algorithms</text>
 </svg>
