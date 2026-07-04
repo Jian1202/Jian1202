@@ -1,18 +1,19 @@
 <svg width="860" height="150" viewBox="0 0 860 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">常摸的工具</title>
   <desc id="desc">Vue、JavaScript、TypeScript、Python、C、C++、Node.js 和 Git。</desc>
-  <rect width="860" height="150" rx="22" fill="#101418"/>
-  <rect x="28" y="28" width="804" height="94" rx="18" fill="#151B20" stroke="#2D343B"/>
-  <text x="54" y="67" fill="#F6F1E8" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="24" font-weight="750">常摸的工具</text>
-  <text x="54" y="96" fill="#8E99A5" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="14">Vue · JavaScript · TypeScript · Python · C/C++ · Node.js · Git</text>
-  <rect x="530" y="50" width="48" height="28" rx="8" fill="#42B883"/>
-  <rect x="586" y="50" width="48" height="28" rx="8" fill="#F7DF1E"/>
-  <rect x="642" y="50" width="48" height="28" rx="8" fill="#3178C6"/>
-  <rect x="698" y="50" width="48" height="28" rx="8" fill="#3776AB"/>
-  <rect x="754" y="50" width="48" height="28" rx="8" fill="#F05032"/>
-  <text x="546" y="69" fill="#101418" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700">Vue</text>
-  <text x="598" y="69" fill="#101418" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700">JS</text>
-  <text x="654" y="69" fill="#F6F1E8" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700">TS</text>
-  <text x="707" y="69" fill="#F6F1E8" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700">Py</text>
-  <text x="767" y="69" fill="#F6F1E8" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700">Git</text>
+  <path d="M0 0H860V128C860 140.15 850.15 150 838 150H22C9.85 150 0 140.15 0 128V0Z" fill="#101418"/>
+  <path d="M28 0H832V116H28V0Z" fill="#151B20" stroke="#2D343B"/>
+  <path d="M54 42H176" stroke="#5FBF9F" stroke-width="3" stroke-linecap="round"/>
+  <text x="54" y="72" fill="#F6F1E8" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="24" font-weight="750">常摸的工具</text>
+  <text x="54" y="101" fill="#8E99A5" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="14">Vue · JavaScript · TypeScript · Python · C/C++ · Node.js · Git</text>
+  <path d="M530 52H578V80H530V52Z" fill="#42B883"/>
+  <path d="M586 52H634V80H586V52Z" fill="#F7DF1E"/>
+  <path d="M642 52H690V80H642V52Z" fill="#3178C6"/>
+  <path d="M698 52H746V80H698V52Z" fill="#3776AB"/>
+  <path d="M754 52H802V80H754V52Z" fill="#F05032"/>
+  <text x="546" y="71" fill="#101418" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700">Vue</text>
+  <text x="598" y="71" fill="#101418" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700">JS</text>
+  <text x="654" y="71" fill="#F6F1E8" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700">TS</text>
+  <text x="707" y="71" fill="#F6F1E8" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700">Py</text>
+  <text x="767" y="71" fill="#F6F1E8" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700">Git</text>
 </svg>
