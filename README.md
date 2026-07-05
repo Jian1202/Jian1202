@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/tool-shelf.svg" width="820" alt="渡的小窝哦！" />
+<img src="./assets/profile-header.svg" width="820" alt="渡的小窝哦！" />
 
 [![Curiosity, the power to change.](https://readme-typing-svg.demolab.com?font=Homemade+Apple&size=22&pause=1000&color=E0B84D&center=true&vCenter=true&width=600&height=48&lines=Curiosity%2C+the+power+to+change.)](https://git.io/typing-svg)
 
