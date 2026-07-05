@@ -15,5 +15,5 @@
   <rect x="710" y="122" width="54" height="8" rx="4" fill="#5FBF9F"/>
   <path d="M618 140H696" stroke="#2D343B" stroke-width="8" stroke-linecap="round"/>
   <path d="M706 140H764" stroke="#2D343B" stroke-width="8" stroke-linecap="round"/>
-  <text x="60" y="198" fill="#69737D" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" letter-spacing="0">agent / frontend / transformer / notes</text>
+  <text x="60" y="198" fill="#69737D" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13" letter-spacing="0">AI / agent / frontend / notes</text>
 </svg>
