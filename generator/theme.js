@@ -18,6 +18,7 @@ module.exports = {
   layout: {
     width: 860,
     headerHeight: 210,
+    radarHeight: 350,
     gutter: 28,
   },
 };

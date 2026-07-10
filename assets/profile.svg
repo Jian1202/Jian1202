@@ -1,23 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="860" height="210" viewBox="0 0 860 210" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="860" height="560" viewBox="0 0 860 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">渡的小窝</title>
-  <desc id="desc">哈喽，这里是渡的小窝哦。方向包括 AI、Agent、前端和笔记。</desc>
-  
-    <g id="header">
-      <path d="M22 0H838C850.15 0 860 9.85 860 22V210H0V22C0 9.85 9.85 0 22 0Z" fill="#D6ECFF"/>
-      <path d="M28 30H832V176H28V30Z" fill="#EAF6FF" stroke="#8FBCE6"/>
-      <circle cx="64" cy="58" r="5" fill="#E0B84D"/>
-      <circle cx="86" cy="58" r="5" fill="#5FBF9F"/>
-      <circle cx="108" cy="58" r="5" fill="#5DA8E8"/>
-      <path d="M48 84H812" stroke="#8FBCE6"/>
-      <text x="60" y="126" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="50" font-weight="750">渡的小窝</text>
-      <text x="60" y="158" fill="#345B7C" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="18" font-weight="500">哈喽，这里是渡的小窝哦</text>
-      <path d="M600 106H784V152H600V106Z" fill="#D6ECFF" stroke="#8FBCE6"/>
-      <rect x="618" y="122" width="44" height="8" rx="4" fill="#5DA8E8"/>
-      <rect x="672" y="122" width="28" height="8" rx="4" fill="#E0B84D"/>
-      <rect x="710" y="122" width="54" height="8" rx="4" fill="#5FBF9F"/>
-      <path d="M618 140H696M706 140H764" stroke="#8FBCE6" stroke-width="8" stroke-linecap="round"/>
-      <text x="60" y="198" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13">AI / agent / frontend / notes</text>
-      <path d="M28 209H832" stroke="#8FBCE6"/>
-    </g>
+  <desc id="desc">哈喽，这里是渡的小窝哦。包含 AI、Agent、前端和笔记方向，以及 GitHub 数据雷达。</desc>
+  <g id="header">
+        <path d="M22 0H838C850.15 0 860 9.85 860 22V210H0V22C0 9.85 9.85 0 22 0Z" fill="#D6ECFF"/>
+        <path d="M28 30H832V176H28V30Z" fill="#EAF6FF" stroke="#8FBCE6"/>
+        <circle cx="64" cy="58" r="5" fill="#E0B84D"/>
+        <circle cx="86" cy="58" r="5" fill="#5FBF9F"/>
+        <circle cx="108" cy="58" r="5" fill="#5DA8E8"/>
+        <path d="M48 84H812" stroke="#8FBCE6"/>
+        <text x="60" y="126" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="50" font-weight="750">渡的小窝</text>
+        <text x="60" y="158" fill="#345B7C" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="18" font-weight="500">哈喽，这里是渡的小窝哦</text>
+        <path d="M600 106H784V152H600V106Z" fill="#D6ECFF" stroke="#8FBCE6"/>
+        <rect x="618" y="122" width="44" height="8" rx="4" fill="#5DA8E8"/>
+        <rect x="672" y="122" width="28" height="8" rx="4" fill="#E0B84D"/>
+        <rect x="710" y="122" width="54" height="8" rx="4" fill="#5FBF9F"/>
+        <path d="M618 140H696M706 140H764" stroke="#8FBCE6" stroke-width="8" stroke-linecap="round"/>
+        <text x="60" y="198" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13">AI / agent / frontend / notes</text>
+        <path d="M28 209H832" stroke="#8FBCE6"/>
+      </g>
+  <g id="radar" transform="translate(0 210)">
+        <path d="M0 0H860V350H0Z" fill="#F7FBFF"/>
+        <path d="M28 0V322H832V0" stroke="#8FBCE6"/>
+        <text x="60" y="48" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="750">小窝雷达</text>
+        <text x="60" y="74" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12">signals collected from GitHub</text>
+
+        <g transform="translate(60 104)">
+          <circle cx="5" cy="-5" r="5" fill="#5DA8E8"/>
+          <text x="24" y="2" fill="#0B132B" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="20" font-weight="700">158</text>
+          <text x="72" y="1" fill="#345B7C" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="15">今年 contributions</text>
+        </g>
+        <g transform="translate(60 152)">
+          <circle cx="5" cy="-5" r="5" fill="#5FBF9F"/>
+          <text x="24" y="2" fill="#0B132B" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="20" font-weight="700">12</text>
+          <text x="72" y="1" fill="#345B7C" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="15">公开仓库</text>
+        </g>
+        <g transform="translate(60 200)">
+          <circle cx="5" cy="-5" r="5" fill="#E0B84D"/>
+          <text x="24" y="2" fill="#0B132B" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="20" font-weight="700">20</text>
+          <text x="72" y="1" fill="#345B7C" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="15">收下的星星</text>
+        </g>
+        <path d="M60 234H390" stroke="#D6ECFF"/>
+        <text x="60" y="264" fill="#345B7C" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="14">常出现的语言</text>
+
+        <g transform="translate(58 288)">
+          <text x="0" y="0" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12">Python</text>
+          <text x="145" y="0" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" text-anchor="end">67%</text>
+          <path d="M0 14H145" stroke="#D6ECFF" stroke-width="6" stroke-linecap="round"/>
+          <path d="M0 14H97" stroke="#5DA8E8" stroke-width="6" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(248 288)">
+          <text x="0" y="0" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12">JavaScript</text>
+          <text x="145" y="0" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" text-anchor="end">19%</text>
+          <path d="M0 14H145" stroke="#D6ECFF" stroke-width="6" stroke-linecap="round"/>
+          <path d="M0 14H28" stroke="#5FBF9F" stroke-width="6" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(438 288)">
+          <text x="0" y="0" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12">TypeScript</text>
+          <text x="145" y="0" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" text-anchor="end">14%</text>
+          <path d="M0 14H145" stroke="#D6ECFF" stroke-width="6" stroke-linecap="round"/>
+          <path d="M0 14H20" stroke="#E0B84D" stroke-width="6" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(640 156)">
+          <circle r="112" stroke="#D6ECFF" stroke-width="1.5"/>
+          <circle r="74" stroke="#8FBCE6" stroke-width="1.5" stroke-dasharray="4 7"/>
+          <circle r="37" stroke="#8FBCE6" stroke-width="1.5"/>
+          <path d="M-126 0H126M0 -126V126" stroke="#D6ECFF"/>
+          <path d="M0 0L92 -58A109 109 0 0 1 110 6Z" fill="#5DA8E8" opacity="0.16"/>
+          <path d="M0 0L92 -58" stroke="#5DA8E8" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="-56" cy="34" r="6" fill="#5FBF9F"/>
+          <circle cx="38" cy="-45" r="5" fill="#E0B84D"/>
+          <circle cx="78" cy="50" r="4" fill="#5DA8E8"/>
+          <circle r="8" fill="#0B132B"/>
+          <circle r="3" fill="#EAF6FF"/>
+        </g>
+        <text x="640" y="302" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" text-anchor="middle">still mapping things out</text>
+      </g>
 </svg>
