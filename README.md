@@ -23,17 +23,17 @@
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Jian1202&bg_color=f7fbff&title_color=0b132b&text_color=345b7c&icon_color=5da8e8&border_color=cfe5f7" width="820" alt="GitHub 贡献概览" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Jian1202&theme=github" width="820" alt="GitHub 贡献概览" />
 
 <br />
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Jian1202&bg_color=f7fbff&title_color=0b132b&text_color=345b7c&icon_color=5da8e8&border_color=cfe5f7" width="405" alt="仓库语言分布" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jian1202&bg_color=f7fbff&title_color=0b132b&text_color=345b7c&icon_color=5da8e8&border_color=cfe5f7" width="405" alt="GitHub 数据概览" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Jian1202&theme=github" width="405" alt="仓库语言分布" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jian1202&theme=github" width="405" alt="GitHub 数据概览" />
 
 <br />
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Jian1202&bg_color=f7fbff&title_color=0b132b&text_color=345b7c&icon_color=5da8e8&border_color=cfe5f7" width="405" alt="提交语言分布" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Jian1202&bg_color=f7fbff&title_color=0b132b&text_color=345b7c&icon_color=5da8e8&border_color=cfe5f7&utcOffset=8" width="405" alt="活跃时间分布" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Jian1202&theme=github" width="405" alt="提交语言分布" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Jian1202&theme=github&utcOffset=8" width="405" alt="活跃时间分布" />
 
 </div>
 
