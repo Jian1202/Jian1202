@@ -13,19 +13,11 @@
 
 ---
 
-<p align="right">
-  <img src="./assets/corner-spark.svg" width="150" alt="小火花装饰" />
-</p>
-
 <div align="center">
   <img src="./assets/now-card.svg" width="820" alt="最近在做：AI、前端、Transformer 和算法笔记" />
 </div>
 
 ---
-
-<p align="left">
-  <img src="./assets/tiny-terminal.svg" width="140" alt="小终端装饰" />
-</p>
 
 ## 小窝雷达
 
@@ -46,10 +38,6 @@
 </div>
 
 ---
-
-<p align="right">
-  <img src="./assets/tiny-notes.svg" width="135" alt="小便签装饰" />
-</p>
 
 <div align="center">
   <img src="./assets/tool-shelf.svg" width="820" alt="常摸的工具：Vue、JavaScript、TypeScript、Python、C/C++、Node.js 和 Git" />
