@@ -15,30 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  legacy-validate:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout profile repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      - name: Install legacy generator
-        run: npm ci
-
-      - name: Validate legacy generator
-        run: |
-          npm run validate
-          npm test
-          npm run generate
-          git diff --exit-code -- assets/profile.svg
-
   update:
-    needs: legacy-validate
     runs-on: ubuntu-latest
     steps:
       - name: Checkout profile repository
@@ -70,17 +47,11 @@ jobs:
           node profile-lab/bin/profile-lab.js validate \
             --config profile/profile.yaml
 
-      - name: Preserve migration baseline
-        run: cp profile/assets/profile.svg "${RUNNER_TEMP}/profile-before.svg"
-
       - name: Generate profile SVG
         run: |
           node profile-lab/bin/profile-lab.js generate \
             --config profile/profile.yaml \
             --output profile/assets/profile.svg
-
-      - name: Verify migration equivalence
-        run: cmp --silent "${RUNNER_TEMP}/profile-before.svg" profile/assets/profile.svg
 
       - name: Check repository status
         working-directory: profile
