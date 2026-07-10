@@ -25,10 +25,10 @@ sections:
       eyebrow: CURRENT MISSION
       tracks:
         - name: 持续学习AI相关知识~
-          items: [Transformer,LLM,DL,ML,Agent,……]
+          items: [Transformer,LLM,DL,Agent]
           color: blue
         - name: 学一些工程知识~
-          items: [Frontend,AI Coding,CV,……]
+          items: [Frontend,AI Coding,CV]
           color: green
 
   - id: timeline
@@ -36,14 +36,14 @@ sections:
     enabled: true
     variant: horizontal
     data:
-      title: 小轨迹~🚗
+      title: 会开往哪里呢？
       eyebrow: DEVELOPER JOURNEY
       entries:
         - year: "2025"
           focus: Frontend
           color: green
         - year: "2026"
-          focus: AI
+          focus: AI / Agent / Engineering
           color: blue
         - year: Future
           focus: Thinking……
@@ -54,7 +54,7 @@ sections:
     enabled: true
     variant: default
     data:
-      title: 小雷达~🔍
+      title: 雷达探测中！
       eyebrow: STATIC SNAPSHOT
       stats:
         - label: Stars
@@ -82,7 +82,7 @@ sections:
     enabled: true
     variant: tree
     data:
-      title: 一棵待发芽的技能树~🌱
+      title: 待发芽的技能树~🌱
       eyebrow: SKILL TREE
       trees:
         - name: AI
@@ -97,7 +97,7 @@ sections:
     enabled: true
     variant: drawer
     data:
-      title: Some Projects
+      title: 一些小玩意
       eyebrow: PROJECT NOTES
       entries:
         - name: my-agent
@@ -119,4 +119,4 @@ sections:
     variant: default
     data:
       handle: Jian1202
-      slogan: Curiosity, to change the world.
+      slogan: 好奇之心，改变之力
