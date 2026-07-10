@@ -1,0 +1,26 @@
+<svg width="820" height="420" viewBox="0 0 820 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="820" height="420" rx="18" fill="#F7FBFF"/>
+<rect x="1" y="1" width="818" height="418" rx="17" stroke="#D6ECFF"/>
+<text x="40" y="55" fill="#0B132B" font-size="30" font-family="Inter, Microsoft YaHei, sans-serif" font-weight="700">Jian1202 (渡)</text>
+<text x="40" y="92" fill="#345B7C" font-size="16" font-family="Inter, Microsoft YaHei, sans-serif">小窝雷达 · GitHub Activity</text>
+
+<circle cx="72" cy="140" r="8" fill="#5DA8E8"/>
+<text x="95" y="146" fill="#345B7C" font-size="18" font-family="Inter, Microsoft YaHei, sans-serif">158 Contributions in 2026</text>
+<circle cx="72" cy="185" r="8" fill="#5FBF9F"/>
+<text x="95" y="191" fill="#345B7C" font-size="18" font-family="Inter, Microsoft YaHei, sans-serif">5 Public Repositories</text>
+<circle cx="72" cy="230" r="8" fill="#E0B84D"/>
+<text x="95" y="236" fill="#345B7C" font-size="18" font-family="Microsoft YaHei, sans-serif">Joined GitHub 1 year ago</text>
+
+<rect x="430" y="120" width="330" height="160" rx="12" fill="#EAF6FF"/>
+<path d="M455 250 C500 220 530 245 565 210 C600 175 630 235 670 200 C705 170 725 220 745 140" stroke="#5DA8E8" stroke-width="4" fill="none"/>
+<path d="M455 250 C500 220 530 245 565 210 C600 175 630 235 670 200 C705 170 725 220 745 140 L745 250Z" fill="#BFDDF5" opacity="0.6"/>
+<text x="455" y="145" fill="#345B7C" font-size="13" font-family="Inter, sans-serif">contributions in the last year</text>
+
+<rect x="40" y="310" width="220" height="70" rx="12" fill="#EAF6FF"/>
+<text x="60" y="350" fill="#0B132B" font-size="20" font-family="Inter, sans-serif">Python 67%</text>
+<circle cx="300" cy="345" r="38" stroke="#5DA8E8" stroke-width="18"/>
+<circle cx="300" cy="345" r="38" stroke="#5FBF9F" stroke-width="18" stroke-dasharray="80 160" transform="rotate(-90 300 345)"/>
+
+<rect x="520" y="310" width="240" height="70" rx="12" fill="#EAF6FF"/>
+<text x="545" y="350" fill="#0B132B" font-size="20" font-family="Inter, sans-serif">82 Commits</text>
+</svg>
