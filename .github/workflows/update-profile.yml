@@ -1,31 +1,73 @@
-name: Validate profile SVG
+name: Update Profile
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - profile.yaml
+      - .github/workflows/update-profile.yml
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: update-profile-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  validate:
+  update:
     runs-on: ubuntu-latest
     steps:
-      - name: 检出仓库
+      - name: Checkout profile repository
         uses: actions/checkout@v4
+        with:
+          path: profile
 
-      - name: 设置 Node.js
+      - name: Checkout Profile Lab
+        uses: actions/checkout@v4
+        with:
+          repository: Jian1202/profile-lab
+          # Profile Lab v0.1.0. SHA pinned for reproducible generation.
+          ref: 68e1b5613cc9dea5e56b01f4f42c4b2bda554512
+          path: profile-lab
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+          cache-dependency-path: profile-lab/package-lock.json
 
-      - name: 安装依赖
+      - name: Install Profile Lab
+        working-directory: profile-lab
         run: npm ci
 
-      - name: 运行配置测试
-        run: npm test
+      - name: Validate profile configuration
+        run: |
+          node profile-lab/bin/profile-lab.js validate \
+            --config profile/profile.yaml
 
-      - name: 生成主页 SVG
-        run: npm run generate
+      - name: Generate profile SVG
+        run: |
+          node profile-lab/bin/profile-lab.js generate \
+            --config profile/profile.yaml \
+            --output profile/assets/profile.svg
 
-      - name: 检查生成结果
-        run: git diff --exit-code -- assets/profile.svg
+      - name: Check repository status
+        working-directory: profile
+        run: git status --short
+
+      - name: Commit updated profile
+        working-directory: profile
+        run: |
+          if git diff --quiet -- assets/profile.svg; then
+            echo "Profile SVG is already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/profile.svg
+          git commit -m "chore: update generated profile"
+          git push
