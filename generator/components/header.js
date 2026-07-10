@@ -1,9 +1,9 @@
 const { circle, group, line, path, rect, text } = require('../utils/svg');
 
-module.exports = function header(data, theme, offsetY) {
-  const { colors, fonts, layout } = theme;
-  const { width, gutter, radius, sections } = layout;
-  const height = sections.header;
+module.exports = function header(data, { theme, layout }) {
+  const { colors, fonts } = theme;
+  const { width, gutter, radius } = layout.canvas;
+  const { height, offsetY } = layout.sections.header;
   const display = { 'font-family': fonts.display };
   const mono = { 'font-family': fonts.mono };
 

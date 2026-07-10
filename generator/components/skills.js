@@ -1,9 +1,9 @@
 const { circle, group, line, rect, text } = require('../utils/svg');
 
-module.exports = function skills(data, theme, offsetY) {
-  const { colors, fonts, layout } = theme;
-  const { width, gutter, sections } = layout;
-  const height = sections.skills;
+module.exports = function skills(data, { theme, layout }) {
+  const { colors, fonts } = theme;
+  const { width, gutter } = layout.canvas;
+  const { height, offsetY } = layout.sections.skills;
   const positions = [60, 450];
   const branches = data.trees.map((tree, index) => {
     const x = positions[index];

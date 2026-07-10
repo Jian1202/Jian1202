@@ -13,18 +13,4 @@ module.exports = {
     display: "Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif",
     mono: "'SFMono-Regular', Consolas, 'Liberation Mono', monospace",
   },
-  layout: {
-    width: 860,
-    gutter: 28,
-    radius: 22,
-    sections: {
-      header: 210,
-      mission: 220,
-      timeline: 190,
-      radar: 300,
-      skills: 260,
-      projects: 250,
-      footer: 86,
-    },
-  },
 };

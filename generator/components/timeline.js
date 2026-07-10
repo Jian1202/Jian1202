@@ -1,9 +1,9 @@
 const { circle, group, line, rect, text } = require('../utils/svg');
 
-module.exports = function timeline(data, theme, offsetY) {
-  const { colors, fonts, layout } = theme;
-  const { width, gutter, sections } = layout;
-  const height = sections.timeline;
+module.exports = function timeline(data, { theme, layout }) {
+  const { colors, fonts } = theme;
+  const { width, gutter } = layout.canvas;
+  const { height, offsetY } = layout.sections.timeline;
   const positions = [150, 430, 710];
   const stops = data.entries.map((entry, index) => {
     const x = positions[index];

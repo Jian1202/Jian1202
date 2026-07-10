@@ -1,9 +1,9 @@
 const { circle, group, line, path, rect, text } = require('../utils/svg');
 
-module.exports = function radar(data, theme, offsetY) {
-  const { colors, fonts, layout } = theme;
-  const { width, gutter, sections } = layout;
-  const height = sections.radar;
+module.exports = function radar(data, { theme, layout }) {
+  const { colors, fonts } = theme;
+  const { width, gutter } = layout.canvas;
+  const { height, offsetY } = layout.sections.radar;
   const positions = [60, 250, 440, 630];
   const readings = data.stats.map((metric, index) => {
     const x = positions[index];
