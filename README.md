@@ -22,19 +22,7 @@
 ## 小窝雷达
 
 <div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Jian1202&theme=github" width="820" alt="GitHub 贡献概览" />
-
-<br />
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Jian1202&theme=github" width="405" alt="仓库语言分布" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jian1202&theme=github" width="405" alt="GitHub 数据概览" />
-
-<br />
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Jian1202&theme=github" width="405" alt="提交语言分布" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Jian1202&theme=github&utcOffset=8" width="405" alt="活跃时间分布" />
-
+  <img src="./assets/radar-card.svg" width="820" alt="GitHub 活动概览" />
 </div>
 
 ---
