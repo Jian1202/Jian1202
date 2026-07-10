@@ -29,7 +29,7 @@ sections:
           color: blue
         - name: 学一些工程知识~
           items: [Frontend, AI Coding, CV, ……]
-          color: purple
+          color: green
 
   - id: timeline
     type: timeline
