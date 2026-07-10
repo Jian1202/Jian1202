@@ -36,7 +36,7 @@ sections:
     enabled: true
     variant: horizontal
     data:
-      title: 会开往哪里呢？
+      title: 🚗会开往哪里呢？
       eyebrow: DEVELOPER JOURNEY
       entries:
         - year: "2025"
@@ -54,7 +54,7 @@ sections:
     enabled: true
     variant: default
     data:
-      title: 雷达探测中！
+      title: 🔎雷达探测中！
       eyebrow: STATIC SNAPSHOT
       stats:
         - label: Stars
@@ -82,7 +82,7 @@ sections:
     enabled: true
     variant: tree
     data:
-      title: 待发芽的技能树~🌱
+      title: 🌱待发芽的技能树~
       eyebrow: SKILL TREE
       trees:
         - name: AI
@@ -97,7 +97,7 @@ sections:
     enabled: true
     variant: drawer
     data:
-      title: 一些小玩意
+      title: (*￣3￣)╭一些小玩意
       eyebrow: PROJECT NOTES
       entries:
         - name: my-agent
@@ -119,4 +119,4 @@ sections:
     variant: default
     data:
       handle: Jian1202
-      slogan: 好奇之心，改变之力
+      slogan: 好奇之心，改变之力.
