@@ -25,7 +25,7 @@ sections:
       eyebrow: CURRENT MISSION
       tracks:
         - name: 持续学习AI相关知识~
-          items: [Transformer,LLM,Agent]
+          items: [Transformer   ,LLM,Agent]
           color: blue
         - name: 学一些工程知识~
           items: [Frontend,AI Coding,CV]
