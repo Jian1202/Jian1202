@@ -1,16 +1,21 @@
-module.exports = function footer(theme, offsetY) {
-  const { colors, fonts, layout } = theme;
-  const { width, footerHeight, gutter } = layout;
+const { circle, group, line, path, rect, text } = require('../utils/svg');
 
-  return `
-    <g id="footer" transform="translate(0 ${offsetY})">
-      <path d="M0 0H${width}V${footerHeight - 22}C${width} ${footerHeight - 9.85} ${width - 9.85} ${footerHeight} ${width - 22} ${footerHeight}H22C9.85 ${footerHeight} 0 ${footerHeight - 9.85} 0 ${footerHeight - 22}V0Z" fill="${colors.border}"/>
-      <path d="M${gutter} 0H${width - gutter}V${footerHeight - 28}H${gutter}V0Z" fill="${colors.card}" stroke="${colors.line}"/>
-      <text x="60" y="50" fill="${colors.primary}" font-family="${fonts.mono}" font-size="15" font-weight="700">Jian1202</text>
-      <path d="M162 45H590" stroke="${colors.border}" stroke-width="2" stroke-linecap="round"/>
-      <circle cx="622" cy="45" r="6" fill="${colors.blue}"/>
-      <circle cx="646" cy="45" r="6" fill="${colors.green}"/>
-      <circle cx="670" cy="45" r="6" fill="${colors.gold}"/>
-      <text x="800" y="50" fill="${colors.muted}" font-family="${fonts.mono}" font-size="12" text-anchor="end">github</text>
-    </g>`;
+module.exports = function footer(theme, _data, offsetY) {
+  const { colors, fonts, layout } = theme;
+  const { width, gutter, radius, sections } = layout;
+  const height = sections.footer;
+
+  return group([
+    path({
+      d: `M0 0H${width}V${height - radius}Q${width} ${height} ${width - radius} ${height}H${radius}Q0 ${height} 0 ${height - radius}Z`,
+      fill: colors.border,
+    }),
+    rect({ x: gutter, y: 0, width: width - gutter * 2, height: height - 28, fill: colors.card, stroke: colors.border }),
+    text('Jian1202', { x: 60, y: 40, fill: colors.primary, 'font-family': fonts.mono, 'font-size': 14, 'font-weight': 700 }),
+    line({ x1: 154, y1: 36, x2: 560, y2: 36, stroke: colors.border, 'stroke-width': 2, 'stroke-linecap': 'round' }),
+    circle({ cx: 590, cy: 36, r: 5, fill: colors.blue }),
+    circle({ cx: 612, cy: 36, r: 5, fill: colors.green }),
+    circle({ cx: 634, cy: 36, r: 5, fill: colors.gold }),
+    text('Curiosity, the power to change.', { x: 800, y: 40, fill: colors.text, opacity: 0.75, 'font-family': fonts.mono, 'font-size': 11, 'text-anchor': 'end' }),
+  ], { id: 'footer', transform: `translate(0 ${offsetY})` });
 };

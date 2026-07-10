@@ -1,34 +1,39 @@
-module.exports = function skills(theme, groups, offsetY) {
+const { circle, group, line, rect, text } = require('../utils/svg');
+
+module.exports = function skills(theme, trees, offsetY) {
   const { colors, fonts, layout } = theme;
-  const { width, skillsHeight, gutter } = layout;
-  const positions = [60, 318, 576];
-  const maps = groups.map((group, index) => {
+  const { width, gutter, sections } = layout;
+  const height = sections.skills;
+  const positions = [60, 450];
+  const branches = trees.map((tree, index) => {
     const x = positions[index];
-    const accent = colors[group.color];
-    const items = group.items.map((item, itemIndex) => {
-      const y = 110 + itemIndex * 30;
+    const accent = colors[tree.color];
+    const startY = 126;
+    const gap = 28;
+    const items = tree.items.map((item, itemIndex) => {
+      const y = startY + itemIndex * gap;
 
-      return `
-        <path d="M${x + 14} ${y - 6}H${x + 30}" stroke="${colors.line}"/>
-        <circle cx="${x + 34}" cy="${y - 6}" r="3" fill="${accent}"/>
-        <text x="${x + 48}" y="${y}" fill="${colors.text}" font-family="${fonts.mono}" font-size="13">${item}</text>`;
-    }).join('');
+      return group([
+        line({ x1: x + 20, y1: y - 5, x2: x + 42, y2: y - 5, stroke: colors.border }),
+        circle({ cx: x + 46, cy: y - 5, r: 3.5, fill: accent }),
+        text(item, { x: x + 60, y, fill: colors.text, 'font-family': fonts.mono, 'font-size': 13 }),
+      ]);
+    });
 
-    return `
-      <g>
-        <path d="M${x + 14} 78V${110 + (group.items.length - 1) * 30 - 6}" stroke="${colors.line}"/>
-        <rect x="${x}" y="58" width="116" height="30" fill="${accent}"/>
-        <text x="${x + 14}" y="79" fill="${colors.primary}" font-family="${fonts.mono}" font-size="14" font-weight="700">${group.name}</text>
-        ${items}
-      </g>`;
-  }).join('');
+    return group([
+      rect({ x, y: 68, width: 150, height: 34, fill: accent }),
+      text(tree.name, { x: x + 16, y: 91, fill: colors.primary, 'font-family': fonts.mono, 'font-size': 14, 'font-weight': 700 }),
+      line({ x1: x + 20, y1: 102, x2: x + 20, y2: startY + (tree.items.length - 1) * gap - 5, stroke: colors.border }),
+      items,
+    ]);
+  });
 
-  return `
-    <g id="skills" transform="translate(0 ${offsetY})">
-      <path d="M0 0H${width}V${skillsHeight}H0Z" fill="${colors.background}"/>
-      <path d="M${gutter} 0V${skillsHeight}H${width - gutter}V0" stroke="${colors.line}"/>
-      <text x="60" y="38" fill="${colors.primary}" font-family="${fonts.display}" font-size="28" font-weight="750">技术地图</text>
-      <text x="60" y="218" fill="${colors.muted}" font-family="${fonts.mono}" font-size="12">things I keep coming back to</text>
-      ${maps}
-    </g>`;
+  return group([
+    rect({ width, height, fill: colors.card }),
+    line({ x1: gutter, y1: 0, x2: gutter, y2: height, stroke: colors.border }),
+    line({ x1: width - gutter, y1: 0, x2: width - gutter, y2: height, stroke: colors.border }),
+    text('知识树', { x: 60, y: 42, fill: colors.primary, 'font-family': fonts.display, 'font-size': 28, 'font-weight': 750 }),
+    text('KNOWLEDGE TREE', { x: 800, y: 40, fill: colors.text, opacity: 0.62, 'font-family': fonts.mono, 'font-size': 11, 'text-anchor': 'end' }),
+    branches,
+  ], { id: 'skills', transform: `translate(0 ${offsetY})` });
 };

@@ -1,24 +1,32 @@
-module.exports = function header(theme) {
-  const { colors, fonts, layout } = theme;
-  const { width, headerHeight, gutter } = layout;
-  const innerWidth = width - gutter * 2;
+const { circle, group, line, path, rect, text } = require('../utils/svg');
 
-  return `
-    <g id="header">
-      <path d="M22 0H838C850.15 0 860 9.85 860 22V${headerHeight}H0V22C0 9.85 9.85 0 22 0Z" fill="${colors.border}"/>
-      <path d="M${gutter} 30H${width - gutter}V176H${gutter}V30Z" fill="${colors.card}" stroke="${colors.line}"/>
-      <circle cx="64" cy="58" r="5" fill="${colors.gold}"/>
-      <circle cx="86" cy="58" r="5" fill="${colors.green}"/>
-      <circle cx="108" cy="58" r="5" fill="${colors.blue}"/>
-      <path d="M48 84H812" stroke="${colors.line}"/>
-      <text x="60" y="126" fill="${colors.primary}" font-family="${fonts.display}" font-size="50" font-weight="750">渡的小窝</text>
-      <text x="60" y="158" fill="${colors.text}" font-family="${fonts.display}" font-size="18" font-weight="500">哈喽，这里是渡的小窝哦</text>
-      <path d="M600 106H784V152H600V106Z" fill="${colors.border}" stroke="${colors.line}"/>
-      <rect x="618" y="122" width="44" height="8" rx="4" fill="${colors.blue}"/>
-      <rect x="672" y="122" width="28" height="8" rx="4" fill="${colors.gold}"/>
-      <rect x="710" y="122" width="54" height="8" rx="4" fill="${colors.green}"/>
-      <path d="M618 140H696M706 140H764" stroke="${colors.line}" stroke-width="8" stroke-linecap="round"/>
-      <text x="60" y="198" fill="${colors.muted}" font-family="${fonts.mono}" font-size="13">AI / agent / frontend / notes</text>
-      <path d="M${gutter} ${headerHeight - 1}H${gutter + innerWidth}" stroke="${colors.line}"/>
-    </g>`;
+module.exports = function header(theme, data, offsetY) {
+  const { colors, fonts, layout } = theme;
+  const { width, gutter, radius, sections } = layout;
+  const height = sections.header;
+  const display = { 'font-family': fonts.display };
+  const mono = { 'font-family': fonts.mono };
+
+  return group([
+    path({
+      d: `M${radius} 0H${width - radius}Q${width} 0 ${width} ${radius}V${height}H0V${radius}Q0 0 ${radius} 0Z`,
+      fill: colors.border,
+    }),
+    rect({ x: gutter, y: 30, width: width - gutter * 2, height: height - 30, fill: colors.card, stroke: colors.border }),
+    circle({ cx: 64, cy: 58, r: 5, fill: colors.gold }),
+    circle({ cx: 86, cy: 58, r: 5, fill: colors.green }),
+    circle({ cx: 108, cy: 58, r: 5, fill: colors.blue }),
+    line({ x1: 48, y1: 84, x2: 812, y2: 84, stroke: colors.border }),
+    text(data.title, { x: 60, y: 130, fill: colors.primary, 'font-size': 50, 'font-weight': 750, ...display }),
+    text(data.greeting, { x: 60, y: 162, fill: colors.text, 'font-size': 17, 'font-weight': 500, ...display }),
+    text(data.directions, { x: 60, y: 198, fill: colors.text, opacity: 0.72, 'font-size': 13, ...mono }),
+    group([
+      rect({ x: 0, y: 0, width: 184, height: 48, fill: colors.background, stroke: colors.border }),
+      rect({ x: 18, y: 16, width: 44, height: 8, rx: 4, fill: colors.blue }),
+      rect({ x: 72, y: 16, width: 28, height: 8, rx: 4, fill: colors.gold }),
+      rect({ x: 110, y: 16, width: 54, height: 8, rx: 4, fill: colors.green }),
+      line({ x1: 18, y1: 34, x2: 96, y2: 34, stroke: colors.border, 'stroke-width': 8, 'stroke-linecap': 'round' }),
+      line({ x1: 106, y1: 34, x2: 164, y2: 34, stroke: colors.border, 'stroke-width': 8, 'stroke-linecap': 'round' }),
+    ], { transform: 'translate(600 106)' }),
+  ], { id: 'header', transform: `translate(0 ${offsetY})` });
 };
