@@ -1,9 +1,13 @@
 const { circle, group, line, path, rect, text } = require('../utils/svg');
 
-module.exports = function header(data, { theme, layout }) {
+function measure(_section, { layout }) {
+  return { height: layout.blockHeights.header };
+}
+
+function render(section, { theme, layout, offsetY, height }) {
+  const { data } = section;
   const { colors, fonts } = theme;
   const { width, gutter, radius } = layout.canvas;
-  const { height, offsetY } = layout.sections.header;
   const display = { 'font-family': fonts.display };
   const mono = { 'font-family': fonts.mono };
 
@@ -29,4 +33,6 @@ module.exports = function header(data, { theme, layout }) {
       line({ x1: 106, y1: 34, x2: 164, y2: 34, stroke: colors.border, 'stroke-width': 8, 'stroke-linecap': 'round' }),
     ], { transform: 'translate(600 106)' }),
   ], { id: 'header', transform: `translate(0 ${offsetY})` });
-};
+}
+
+module.exports = { measure, render };

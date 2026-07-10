@@ -1,0 +1,13 @@
+{
+  "name": "jian1202-profile-generator",
+  "private": true,
+  "scripts": {
+    "generate": "node generator/index.js",
+    "preview": "node generator/preview.js",
+    "validate": "node generator/validate.js",
+    "test": "node --test generator/tests/*.test.js"
+  },
+  "dependencies": {
+    "yaml": "^2.6.1"
+  }
+}

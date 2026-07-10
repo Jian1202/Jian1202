@@ -1,9 +1,13 @@
 const { circle, group, line, rect, text } = require('../utils/svg');
 
-module.exports = function mission(data, { theme, layout }) {
+function measure(_section, { layout }) {
+  return { height: layout.blockHeights.mission };
+}
+
+function render(section, { theme, layout, offsetY, height }) {
+  const { data } = section;
   const { colors, fonts } = theme;
   const { width, gutter } = layout.canvas;
-  const { height, offsetY } = layout.sections.mission;
   const positions = [60, 450];
   const lanes = data.tracks.map((mission, index) => {
     const x = positions[index];
@@ -29,4 +33,6 @@ module.exports = function mission(data, { theme, layout }) {
     text(data.eyebrow, { x: 800, y: 46, fill: colors.text, opacity: 0.62, 'font-family': fonts.mono, 'font-size': 11, 'text-anchor': 'end' }),
     lanes,
   ], { id: 'mission', transform: `translate(0 ${offsetY})` });
-};
+}
+
+module.exports = { measure, render };

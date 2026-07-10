@@ -1,9 +1,13 @@
 const { circle, group, line, rect, text } = require('../utils/svg');
 
-module.exports = function skills(data, { theme, layout }) {
+function measure(_section, { layout }) {
+  return { height: layout.blockHeights.skills };
+}
+
+function render(section, { theme, layout, offsetY, height }) {
+  const { data } = section;
   const { colors, fonts } = theme;
   const { width, gutter } = layout.canvas;
-  const { height, offsetY } = layout.sections.skills;
   const positions = [60, 450];
   const branches = data.trees.map((tree, index) => {
     const x = positions[index];
@@ -36,4 +40,6 @@ module.exports = function skills(data, { theme, layout }) {
     text(data.eyebrow, { x: 800, y: 40, fill: colors.text, opacity: 0.62, 'font-family': fonts.mono, 'font-size': 11, 'text-anchor': 'end' }),
     branches,
   ], { id: 'skills', transform: `translate(0 ${offsetY})` });
-};
+}
+
+module.exports = { measure, render };

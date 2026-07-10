@@ -1,9 +1,13 @@
 const { circle, group, line, path, rect, text } = require('../utils/svg');
 
-module.exports = function radar(data, { theme, layout }) {
+function measure(_section, { layout }) {
+  return { height: layout.blockHeights.radar };
+}
+
+function render(section, { theme, layout, offsetY, height }) {
+  const { data } = section;
   const { colors, fonts } = theme;
   const { width, gutter } = layout.canvas;
-  const { height, offsetY } = layout.sections.radar;
   const positions = [60, 250, 440, 630];
   const readings = data.stats.map((metric, index) => {
     const x = positions[index];
@@ -39,4 +43,6 @@ module.exports = function radar(data, { theme, layout }) {
       circle({ r: 3, fill: colors.card }),
     ], { transform: 'translate(430 212)' }),
   ], { id: 'radar', transform: `translate(0 ${offsetY})` });
-};
+}
+
+module.exports = { measure, render };

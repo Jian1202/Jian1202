@@ -1,11 +1,11 @@
 const fs = require('node:fs');
 const http = require('node:http');
-const theme = require('./theme');
 const { generateProfile, outputPath } = require('./index');
+const { getTheme } = require('./theme');
 
 const defaultPort = 4173;
 
-function previewPage() {
+function previewPage(theme) {
   return `<!doctype html>
 <html lang="zh-CN">
 <head>
@@ -26,6 +26,16 @@ function previewPage() {
 
 function createPreviewServer() {
   return http.createServer((request, response) => {
+    let result;
+
+    try {
+      result = generateProfile();
+    } catch (error) {
+      response.writeHead(500, { 'Content-Type': 'text/html; charset=utf-8' });
+      response.end(`<!doctype html><meta charset="utf-8"><pre>${error.message}</pre>`);
+      return;
+    }
+
     if (request.url === '/assets/profile.svg') {
       response.writeHead(200, { 'Content-Type': 'image/svg+xml; charset=utf-8' });
       fs.createReadStream(outputPath).pipe(response);
@@ -34,7 +44,7 @@ function createPreviewServer() {
 
     if (request.url === '/' || request.url === '/index.html') {
       response.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-      response.end(previewPage());
+      response.end(previewPage(getTheme(result.config.theme.preset)));
       return;
     }
 
@@ -44,7 +54,6 @@ function createPreviewServer() {
 }
 
 function startPreview(port = defaultPort) {
-  generateProfile();
   const server = createPreviewServer();
 
   server.listen(port, '127.0.0.1', () => {

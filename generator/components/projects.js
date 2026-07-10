@@ -1,9 +1,13 @@
 const { group, line, rect, text } = require('../utils/svg');
 
-module.exports = function projects(data, { theme, layout }) {
+function measure(_section, { layout }) {
+  return { height: layout.blockHeights.projects };
+}
+
+function render(section, { theme, layout, offsetY, height }) {
+  const { data } = section;
   const { colors, fonts } = theme;
   const { width, gutter } = layout.canvas;
-  const { height, offsetY } = layout.sections.projects;
   const cards = data.entries.map((entry, index) => {
     const x = 60 + index * 250;
     const accent = colors[entry.color];
@@ -25,4 +29,6 @@ module.exports = function projects(data, { theme, layout }) {
     text(data.eyebrow, { x: 800, y: 42, fill: colors.text, opacity: 0.62, 'font-family': fonts.mono, 'font-size': 11, 'text-anchor': 'end' }),
     cards,
   ], { id: 'projects', transform: `translate(0 ${offsetY})` });
-};
+}
+
+module.exports = { measure, render };

@@ -1,9 +1,13 @@
 const { circle, group, line, path, rect, text } = require('../utils/svg');
 
-module.exports = function footer(data, { theme, layout }) {
+function measure(_section, { layout }) {
+  return { height: layout.blockHeights.footer };
+}
+
+function render(section, { theme, layout, offsetY, height }) {
+  const { data } = section;
   const { colors, fonts } = theme;
   const { width, gutter, radius } = layout.canvas;
-  const { height, offsetY } = layout.sections.footer;
 
   return group([
     path({
@@ -18,4 +22,6 @@ module.exports = function footer(data, { theme, layout }) {
     circle({ cx: 634, cy: 36, r: 5, fill: colors.gold }),
     text(data.slogan, { x: 800, y: 40, fill: colors.text, opacity: 0.75, 'font-family': fonts.mono, 'font-size': 11, 'text-anchor': 'end' }),
   ], { id: 'footer', transform: `translate(0 ${offsetY})` });
-};
+}
+
+module.exports = { measure, render };

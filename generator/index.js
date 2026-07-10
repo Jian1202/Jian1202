@@ -1,62 +1,63 @@
 const fs = require('node:fs');
 const path = require('node:path');
-const theme = require('./theme');
+const { loadConfig } = require('./config/load-config');
 const layout = require('./layout');
-const profile = require('./data/profile');
-const github = require('./data/github');
-const projectsData = require('./data/projects');
-const skillsData = require('./data/skills');
-const timelineData = require('./data/timeline');
-const { validateData } = require('./data/schema');
+const { getBlock } = require('./registry');
+const { getTheme } = require('./theme');
 const { svgDocument } = require('./utils/svg');
-const header = require('./components/header');
-const mission = require('./components/mission');
-const timeline = require('./components/timeline');
-const radar = require('./components/radar');
-const skills = require('./components/skills');
-const projects = require('./components/projects');
-const footer = require('./components/footer');
-
-const data = validateData({
-  profile,
-  github,
-  projects: projectsData,
-  skills: skillsData,
-  timeline: timelineData,
-});
-
-const sections = [
-  ['header', header, data.profile.header],
-  ['mission', mission, data.profile.mission],
-  ['timeline', timeline, data.timeline],
-  ['radar', radar, data.github],
-  ['skills', skills, data.skills],
-  ['projects', projects, data.projects],
-  ['footer', footer, data.profile.footer],
-];
-
-const context = { theme, layout };
-const fragments = sections.map(([, component, sectionData]) => component(sectionData, context));
 
 const outputPath = path.resolve(__dirname, '..', 'assets', 'profile.svg');
 
-function generateProfile() {
-  const svg = svgDocument({
-    width: layout.canvas.width,
-    height: layout.totalHeight,
-    title: data.profile.documentTitle,
-    description: data.profile.documentDescription,
-    children: fragments,
-  });
+function measureSection(section, context) {
+  const block = getBlock(section);
+  const size = block.measure(section, context);
+
+  if (!size || !Number.isFinite(size.height) || size.height <= 0) {
+    throw new Error(`区块 ${section.id} 返回了非法高度。`);
+  }
+
+  return { block, size };
+}
+
+function buildProfile(config) {
+  const theme = getTheme(config.theme.preset);
+  const enabledSections = config.sections.filter((section) => section.enabled);
+  let offsetY = layout.pageTop;
+  const fragments = [];
+
+  for (const section of enabledSections) {
+    const baseContext = { theme, layout, offsetY };
+    const { block, size } = measureSection(section, baseContext);
+    fragments.push(block.render(section, { ...baseContext, height: size.height }));
+    offsetY += size.height + layout.sectionGap;
+  }
+
+  const totalHeight = offsetY - layout.sectionGap;
+  return {
+    enabledSections,
+    totalHeight,
+    svg: svgDocument({
+      width: layout.canvas.width,
+      height: totalHeight,
+      title: config.page.title,
+      description: config.page.description,
+      children: fragments,
+    }),
+  };
+}
+
+function generateProfile({ configPath } = {}) {
+  const config = loadConfig(configPath);
+  const result = buildProfile(config);
 
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-  fs.writeFileSync(outputPath, svg, 'utf8');
-  return { outputPath, svg };
+  fs.writeFileSync(outputPath, result.svg, 'utf8');
+  return { ...result, config, outputPath };
 }
 
 if (require.main === module) {
-  const result = generateProfile();
+  const result = generateProfile({ configPath: process.argv[2] });
   console.log(`已生成 ${path.relative(process.cwd(), result.outputPath)}`);
 }
 
-module.exports = { generateProfile, outputPath };
+module.exports = { buildProfile, generateProfile, outputPath };

@@ -18,8 +18,14 @@ jobs:
         with:
           node-version: 20
 
+      - name: 安装依赖
+        run: npm ci
+
+      - name: 运行配置测试
+        run: npm test
+
       - name: 生成主页 SVG
-        run: node generator/index.js
+        run: npm run generate
 
       - name: 检查生成结果
         run: git diff --exit-code -- assets/profile.svg
