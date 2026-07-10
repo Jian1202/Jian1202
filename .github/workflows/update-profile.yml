@@ -17,6 +17,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout profile repository
         uses: actions/checkout@v4
@@ -53,21 +54,53 @@ jobs:
             --config profile/profile.yaml \
             --output profile/assets/profile.svg
 
+      - name: Refresh README image version
+        working-directory: profile
+        shell: bash
+        run: |
+          version="$(sha256sum assets/profile.svg | cut -c1-12)"
+
+          python - "$version" <<'PY'
+          from pathlib import Path
+          import re
+          import sys
+
+          version = sys.argv[1]
+          readme_path = Path("README.md")
+          content = readme_path.read_text(encoding="utf-8")
+
+          pattern = r'(\./assets/profile\.svg)(?:\?v=[^"]*)?'
+
+          if not re.search(pattern, content):
+              raise SystemExit("README.md 中没有找到 ./assets/profile.svg")
+
+          updated = re.sub(
+              pattern,
+              lambda match: f"{match.group(1)}?v={version}",
+              content,
+              count=1,
+          )
+
+          readme_path.write_text(updated, encoding="utf-8")
+          print(f"README image version updated to: {version}")
+          PY
+
       - name: Check repository status
         working-directory: profile
         run: git status --short
 
       - name: Commit updated profile
         working-directory: profile
+        shell: bash
         run: |
-          if git diff --quiet -- assets/profile.svg; then
-            echo "Profile SVG is already up to date."
+          if git diff --quiet -- assets/profile.svg README.md; then
+            echo "Profile SVG and README are already up to date."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add assets/profile.svg
+          git add assets/profile.svg README.md
           git commit -m "chore: update generated profile"
           git push
