@@ -1,6 +1,6 @@
 const { circle, group, line, path, rect, text } = require('../utils/svg');
 
-module.exports = function header(theme, data, offsetY) {
+module.exports = function header(data, theme, offsetY) {
   const { colors, fonts, layout } = theme;
   const { width, gutter, radius, sections } = layout;
   const height = sections.header;
@@ -19,7 +19,7 @@ module.exports = function header(theme, data, offsetY) {
     line({ x1: 48, y1: 84, x2: 812, y2: 84, stroke: colors.border }),
     text(data.title, { x: 60, y: 130, fill: colors.primary, 'font-size': 50, 'font-weight': 750, ...display }),
     text(data.greeting, { x: 60, y: 162, fill: colors.text, 'font-size': 17, 'font-weight': 500, ...display }),
-    text(data.directions, { x: 60, y: 198, fill: colors.text, opacity: 0.72, 'font-size': 13, ...mono }),
+    text(data.subtitle, { x: 60, y: 198, fill: colors.text, opacity: 0.72, 'font-size': 13, ...mono }),
     group([
       rect({ x: 0, y: 0, width: 184, height: 48, fill: colors.background, stroke: colors.border }),
       rect({ x: 18, y: 16, width: 44, height: 8, rx: 4, fill: colors.blue }),

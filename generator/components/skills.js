@@ -1,11 +1,11 @@
 const { circle, group, line, rect, text } = require('../utils/svg');
 
-module.exports = function skills(theme, trees, offsetY) {
+module.exports = function skills(data, theme, offsetY) {
   const { colors, fonts, layout } = theme;
   const { width, gutter, sections } = layout;
   const height = sections.skills;
   const positions = [60, 450];
-  const branches = trees.map((tree, index) => {
+  const branches = data.trees.map((tree, index) => {
     const x = positions[index];
     const accent = colors[tree.color];
     const startY = 126;
@@ -32,8 +32,8 @@ module.exports = function skills(theme, trees, offsetY) {
     rect({ width, height, fill: colors.card }),
     line({ x1: gutter, y1: 0, x2: gutter, y2: height, stroke: colors.border }),
     line({ x1: width - gutter, y1: 0, x2: width - gutter, y2: height, stroke: colors.border }),
-    text('知识树', { x: 60, y: 42, fill: colors.primary, 'font-family': fonts.display, 'font-size': 28, 'font-weight': 750 }),
-    text('KNOWLEDGE TREE', { x: 800, y: 40, fill: colors.text, opacity: 0.62, 'font-family': fonts.mono, 'font-size': 11, 'text-anchor': 'end' }),
+    text(data.title, { x: 60, y: 42, fill: colors.primary, 'font-family': fonts.display, 'font-size': 28, 'font-weight': 750 }),
+    text(data.eyebrow, { x: 800, y: 40, fill: colors.text, opacity: 0.62, 'font-family': fonts.mono, 'font-size': 11, 'text-anchor': 'end' }),
     branches,
   ], { id: 'skills', transform: `translate(0 ${offsetY})` });
 };

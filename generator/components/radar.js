@@ -1,11 +1,11 @@
 const { circle, group, line, path, rect, text } = require('../utils/svg');
 
-module.exports = function radar(theme, metrics, offsetY) {
+module.exports = function radar(data, theme, offsetY) {
   const { colors, fonts, layout } = theme;
   const { width, gutter, sections } = layout;
   const height = sections.radar;
   const positions = [60, 250, 440, 630];
-  const readings = metrics.map((metric, index) => {
+  const readings = data.stats.map((metric, index) => {
     const x = positions[index];
     const accent = colors[metric.color];
 
@@ -21,8 +21,8 @@ module.exports = function radar(theme, metrics, offsetY) {
     rect({ width, height, fill: colors.background }),
     line({ x1: gutter, y1: 0, x2: gutter, y2: height, stroke: colors.border }),
     line({ x1: width - gutter, y1: 0, x2: width - gutter, y2: height, stroke: colors.border }),
-    text('小窝雷达', { x: 60, y: 48, fill: colors.primary, 'font-family': fonts.display, 'font-size': 28, 'font-weight': 750 }),
-    text('静态快照', { x: 800, y: 46, fill: colors.text, opacity: 0.62, 'font-family': fonts.mono, 'font-size': 11, 'text-anchor': 'end' }),
+    text(data.title, { x: 60, y: 48, fill: colors.primary, 'font-family': fonts.display, 'font-size': 28, 'font-weight': 750 }),
+    text(data.eyebrow, { x: 800, y: 46, fill: colors.text, opacity: 0.62, 'font-family': fonts.mono, 'font-size': 11, 'text-anchor': 'end' }),
     readings,
     group([
       circle({ r: 72, stroke: colors.border, 'stroke-width': 1.5 }),

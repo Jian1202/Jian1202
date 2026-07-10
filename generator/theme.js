@@ -20,6 +20,7 @@ module.exports = {
     sections: {
       header: 210,
       mission: 220,
+      timeline: 190,
       radar: 300,
       skills: 260,
       projects: 250,

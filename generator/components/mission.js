@@ -1,11 +1,11 @@
 const { circle, group, line, rect, text } = require('../utils/svg');
 
-module.exports = function mission(theme, missions, offsetY) {
+module.exports = function mission(data, theme, offsetY) {
   const { colors, fonts, layout } = theme;
   const { width, gutter, sections } = layout;
   const height = sections.mission;
   const positions = [60, 450];
-  const lanes = missions.map((mission, index) => {
+  const lanes = data.tracks.map((mission, index) => {
     const x = positions[index];
     const accent = colors[mission.color];
     const items = mission.items.map((item, itemIndex) => group([
@@ -25,8 +25,8 @@ module.exports = function mission(theme, missions, offsetY) {
     rect({ width, height, fill: colors.card }),
     line({ x1: gutter, y1: 0, x2: gutter, y2: height, stroke: colors.border }),
     line({ x1: width - gutter, y1: 0, x2: width - gutter, y2: height, stroke: colors.border }),
-    text('最近在做', { x: 60, y: 48, fill: colors.primary, 'font-family': fonts.display, 'font-size': 28, 'font-weight': 750 }),
-    text('CURRENT MISSION', { x: 800, y: 46, fill: colors.text, opacity: 0.62, 'font-family': fonts.mono, 'font-size': 11, 'text-anchor': 'end' }),
+    text(data.title, { x: 60, y: 48, fill: colors.primary, 'font-family': fonts.display, 'font-size': 28, 'font-weight': 750 }),
+    text(data.eyebrow, { x: 800, y: 46, fill: colors.text, opacity: 0.62, 'font-family': fonts.mono, 'font-size': 11, 'text-anchor': 'end' }),
     lanes,
   ], { id: 'mission', transform: `translate(0 ${offsetY})` });
 };

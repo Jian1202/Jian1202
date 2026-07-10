@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="860" height="1326" viewBox="0 0 860 1326" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="860" height="1516" viewBox="0 0 860 1516" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">渡的小窝</title>
-  <desc id="desc">个人 AI 实验室主页，包含当前方向、GitHub 雷达、知识树和代表项目。</desc>
+  <desc id="desc">个人 AI 实验室主页，包含当前方向、成长路径、GitHub 雷达、知识树和代表项目。</desc>
   <g id="header" transform="translate(0 0)">
     <path d="M22 0H838Q860 0 860 22V210H0V22Q0 0 22 0Z" fill="#D6ECFF"/>
     <rect x="28" y="30" width="804" height="180" fill="#EAF6FF" stroke="#D6ECFF"/>
@@ -58,12 +58,41 @@
       </g>
     </g>
   </g>
-  <g id="radar" transform="translate(0 430)">
+  <g id="timeline" transform="translate(0 430)">
+    <rect width="860" height="190" fill="#F7FBFF"/>
+    <line x1="28" y1="0" x2="28" y2="190" stroke="#D6ECFF"/>
+    <line x1="832" y1="0" x2="832" y2="190" stroke="#D6ECFF"/>
+    <text x="60" y="46" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="750">成长路径</text>
+    <text x="800" y="44" fill="#345B7C" opacity="0.62" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="11" text-anchor="end">DEVELOPER JOURNEY</text>
+    <line x1="150" y1="132" x2="710" y2="132" stroke="#D6ECFF" stroke-width="3" stroke-linecap="round"/>
+    <g>
+      <rect x="124" y="88" width="52" height="22" rx="11" fill="#F7FBFF" stroke="#D6ECFF"/>
+      <text x="150" y="103" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="11" text-anchor="middle">2025</text>
+      <circle cx="150" cy="132" r="9" fill="#5FBF9F"/>
+      <circle cx="150" cy="132" r="3" fill="#EAF6FF"/>
+      <text x="150" y="164" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="700" text-anchor="middle">Frontend</text>
+    </g>
+    <g>
+      <rect x="404" y="88" width="52" height="22" rx="11" fill="#F7FBFF" stroke="#D6ECFF"/>
+      <text x="430" y="103" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="11" text-anchor="middle">2026</text>
+      <circle cx="430" cy="132" r="9" fill="#5DA8E8"/>
+      <circle cx="430" cy="132" r="3" fill="#EAF6FF"/>
+      <text x="430" y="164" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="700" text-anchor="middle">AI + LLM</text>
+    </g>
+    <g>
+      <rect x="684" y="88" width="52" height="22" rx="11" fill="#F7FBFF" stroke="#D6ECFF"/>
+      <text x="710" y="103" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="11" text-anchor="middle">Future</text>
+      <circle cx="710" cy="132" r="9" fill="#E0B84D"/>
+      <circle cx="710" cy="132" r="3" fill="#EAF6FF"/>
+      <text x="710" y="164" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="700" text-anchor="middle">Agent / Robotics</text>
+    </g>
+  </g>
+  <g id="radar" transform="translate(0 620)">
     <rect width="860" height="300" fill="#F7FBFF"/>
     <line x1="28" y1="0" x2="28" y2="300" stroke="#D6ECFF"/>
     <line x1="832" y1="0" x2="832" y2="300" stroke="#D6ECFF"/>
     <text x="60" y="48" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="750">小窝雷达</text>
-    <text x="800" y="46" fill="#345B7C" opacity="0.62" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="11" text-anchor="end">静态快照</text>
+    <text x="800" y="46" fill="#345B7C" opacity="0.62" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="11" text-anchor="end">STATIC SNAPSHOT</text>
     <g>
       <line x1="60" y1="84" x2="202" y2="84" stroke="#D6ECFF" stroke-width="3"/>
       <circle cx="65" cy="84" r="5" fill="#E0B84D"/>
@@ -103,7 +132,7 @@
       <circle r="3" fill="#EAF6FF"/>
     </g>
   </g>
-  <g id="skills" transform="translate(0 730)">
+  <g id="skills" transform="translate(0 920)">
     <rect width="860" height="260" fill="#EAF6FF"/>
     <line x1="28" y1="0" x2="28" y2="260" stroke="#D6ECFF"/>
     <line x1="832" y1="0" x2="832" y2="260" stroke="#D6ECFF"/>
@@ -155,7 +184,7 @@
       </g>
     </g>
   </g>
-  <g id="projects" transform="translate(0 990)">
+  <g id="projects" transform="translate(0 1180)">
     <rect width="860" height="250" fill="#F7FBFF"/>
     <line x1="28" y1="0" x2="28" y2="250" stroke="#D6ECFF"/>
     <line x1="832" y1="0" x2="832" y2="250" stroke="#D6ECFF"/>
@@ -166,24 +195,24 @@
       <line x1="78" y1="96" x2="262" y2="96" stroke="#5DA8E8" stroke-width="4" stroke-linecap="round"/>
       <text x="78" y="130" fill="#0B132B" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700">my-agent</text>
       <text x="78" y="166" fill="#345B7C" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="13">从零写 LLM Agent 的小实践</text>
-      <text x="78" y="194" fill="#345B7C" opacity="0.6" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="10">github / Jian1202</text>
+      <text x="78" y="194" fill="#345B7C" opacity="0.6" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="10">LLM · Agent</text>
     </g>
     <g>
       <rect x="310" y="76" width="220" height="136" rx="8" fill="#F7FBFF" stroke="#D6ECFF"/>
       <line x1="328" y1="96" x2="512" y2="96" stroke="#E0B84D" stroke-width="4" stroke-linecap="round"/>
       <text x="328" y="130" fill="#0B132B" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700">transformer-explainer-cn</text>
       <text x="328" y="166" fill="#345B7C" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="13">Transformer 可视化解释器汉化</text>
-      <text x="328" y="194" fill="#345B7C" opacity="0.6" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="10">github / Jian1202</text>
+      <text x="328" y="194" fill="#345B7C" opacity="0.6" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="10">Transformer · Education</text>
     </g>
     <g>
       <rect x="560" y="76" width="220" height="136" rx="8" fill="#F7FBFF" stroke="#D6ECFF"/>
       <line x1="578" y1="96" x2="762" y2="96" stroke="#5FBF9F" stroke-width="4" stroke-linecap="round"/>
       <text x="578" y="130" fill="#0B132B" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700">grape-robot</text>
       <text x="578" y="166" fill="#345B7C" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="13">机器人视觉与采摘方向练习</text>
-      <text x="578" y="194" fill="#345B7C" opacity="0.6" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="10">github / Jian1202</text>
+      <text x="578" y="194" fill="#345B7C" opacity="0.6" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="10">Vision · Robotics</text>
     </g>
   </g>
-  <g id="footer" transform="translate(0 1240)">
+  <g id="footer" transform="translate(0 1430)">
     <path d="M0 0H860V64Q860 86 838 86H22Q0 86 0 64Z" fill="#D6ECFF"/>
     <rect x="28" y="0" width="804" height="58" fill="#EAF6FF" stroke="#D6ECFF"/>
     <text x="60" y="40" fill="#0B132B" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700">Jian1202</text>
