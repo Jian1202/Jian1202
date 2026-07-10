@@ -66,7 +66,7 @@
     <rect width="860" height="190" fill="#F7FBFF"/>
     <line x1="28" y1="0" x2="28" y2="190" stroke="#D6ECFF"/>
     <line x1="832" y1="0" x2="832" y2="190" stroke="#D6ECFF"/>
-    <text x="60" y="46" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="750">会开往哪里呢？</text>
+    <text x="60" y="46" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="750">🚗会开往哪里呢？</text>
     <text x="800" y="44" fill="#345B7C" opacity="0.62" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="11" text-anchor="end">DEVELOPER JOURNEY</text>
     <line x1="150" y1="132" x2="710" y2="132" stroke="#D6ECFF" stroke-width="3" stroke-linecap="round"/>
     <g>
@@ -95,7 +95,7 @@
     <rect width="860" height="300" fill="#F7FBFF"/>
     <line x1="28" y1="0" x2="28" y2="300" stroke="#D6ECFF"/>
     <line x1="832" y1="0" x2="832" y2="300" stroke="#D6ECFF"/>
-    <text x="60" y="48" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="750">雷达探测中！</text>
+    <text x="60" y="48" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="750">🔎雷达探测中！</text>
     <text x="800" y="46" fill="#345B7C" opacity="0.62" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="11" text-anchor="end">STATIC SNAPSHOT</text>
     <g>
       <line x1="60" y1="84" x2="202" y2="84" stroke="#D6ECFF" stroke-width="3"/>
@@ -140,7 +140,7 @@
     <rect width="860" height="260" fill="#EAF6FF"/>
     <line x1="28" y1="0" x2="28" y2="260" stroke="#D6ECFF"/>
     <line x1="832" y1="0" x2="832" y2="260" stroke="#D6ECFF"/>
-    <text x="60" y="42" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="750">待发芽的技能树~🌱</text>
+    <text x="60" y="42" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="750">🌱待发芽的技能树~</text>
     <text x="800" y="40" fill="#345B7C" opacity="0.62" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="11" text-anchor="end">SKILL TREE</text>
     <g>
       <rect x="60" y="68" width="150" height="34" fill="#5DA8E8"/>
@@ -202,7 +202,7 @@
     <rect width="860" height="250" fill="#F7FBFF"/>
     <line x1="28" y1="0" x2="28" y2="250" stroke="#D6ECFF"/>
     <line x1="832" y1="0" x2="832" y2="250" stroke="#D6ECFF"/>
-    <text x="60" y="44" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="750">一些小玩意</text>
+    <text x="60" y="44" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="750">(*￣3￣)╭一些小玩意</text>
     <text x="800" y="42" fill="#345B7C" opacity="0.62" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="11" text-anchor="end">PROJECT NOTES</text>
     <g>
       <rect x="60" y="76" width="220" height="136" rx="8" fill="#F7FBFF" stroke="#D6ECFF"/>
@@ -234,6 +234,6 @@
     <circle cx="590" cy="36" r="5" fill="#5DA8E8"/>
     <circle cx="612" cy="36" r="5" fill="#5FBF9F"/>
     <circle cx="634" cy="36" r="5" fill="#E0B84D"/>
-    <text x="800" y="40" fill="#345B7C" opacity="0.75" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="11" text-anchor="end">好奇之心，改变之力</text>
+    <text x="800" y="40" fill="#345B7C" opacity="0.75" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="11" text-anchor="end">好奇之心，改变之力.</text>
   </g>
 </svg>
