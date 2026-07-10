@@ -34,9 +34,9 @@ module.exports = function radar(theme, data, offsetY) {
   return `
     <g id="radar" transform="translate(0 ${offsetY})">
       <path d="M0 0H${width}V${radarHeight}H0Z" fill="${colors.background}"/>
-      <path d="M${gutter} 0V${radarHeight - 28}H${width - gutter}V0" stroke="${colors.line}"/>
+      <path d="M${gutter} 0V${radarHeight}H${width - gutter}V0" stroke="${colors.line}"/>
       <text x="60" y="48" fill="${colors.primary}" font-family="${fonts.display}" font-size="28" font-weight="750">小窝雷达</text>
-      <text x="60" y="74" fill="${colors.muted}" font-family="${fonts.mono}" font-size="12">signals collected from GitHub</text>
+      <text x="60" y="74" fill="${colors.muted}" font-family="${fonts.mono}" font-size="12">从 GitHub 捞到的几条小信号</text>
       ${metricRows}
       <path d="M60 234H390" stroke="${colors.border}"/>
       <text x="60" y="264" fill="${colors.text}" font-family="${fonts.display}" font-size="14">常出现的语言</text>
@@ -54,6 +54,6 @@ module.exports = function radar(theme, data, offsetY) {
         <circle r="8" fill="${colors.primary}"/>
         <circle r="3" fill="${colors.card}"/>
       </g>
-      <text x="640" y="302" fill="${colors.muted}" font-family="${fonts.mono}" font-size="12" text-anchor="middle">still mapping things out</text>
+      <text x="640" y="302" fill="${colors.muted}" font-family="${fonts.mono}" font-size="12" text-anchor="middle">慢慢把地图补全</text>
     </g>`;
 };

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="860" height="560" viewBox="0 0 860 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="860" height="1084" viewBox="0 0 860 1084" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">渡的小窝</title>
-  <desc id="desc">哈喽，这里是渡的小窝哦。包含 AI、Agent、前端和笔记方向，以及 GitHub 数据雷达。</desc>
+  <desc id="desc">哈喽，这里是渡的小窝哦。这里有正在做的方向、GitHub 数据雷达和技术地图。</desc>
   <g id="header">
         <path d="M22 0H838C850.15 0 860 9.85 860 22V210H0V22C0 9.85 9.85 0 22 0Z" fill="#D6ECFF"/>
         <path d="M28 30H832V176H28V30Z" fill="#EAF6FF" stroke="#8FBCE6"/>
@@ -21,13 +21,13 @@
       </g>
   <g id="radar" transform="translate(0 210)">
         <path d="M0 0H860V350H0Z" fill="#F7FBFF"/>
-        <path d="M28 0V322H832V0" stroke="#8FBCE6"/>
+        <path d="M28 0V350H832V0" stroke="#8FBCE6"/>
         <text x="60" y="48" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="750">小窝雷达</text>
-        <text x="60" y="74" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12">signals collected from GitHub</text>
+        <text x="60" y="74" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12">从 GitHub 捞到的几条小信号</text>
 
         <g transform="translate(60 104)">
           <circle cx="5" cy="-5" r="5" fill="#5DA8E8"/>
-          <text x="24" y="2" fill="#0B132B" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="20" font-weight="700">158</text>
+          <text x="24" y="2" fill="#0B132B" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="20" font-weight="700">161</text>
           <text x="72" y="1" fill="#345B7C" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="15">今年 contributions</text>
         </g>
         <g transform="translate(60 152)">
@@ -44,22 +44,22 @@
         <text x="60" y="264" fill="#345B7C" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="14">常出现的语言</text>
 
         <g transform="translate(58 288)">
-          <text x="0" y="0" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12">Python</text>
-          <text x="145" y="0" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" text-anchor="end">67%</text>
+          <text x="0" y="0" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12">TypeScript</text>
+          <text x="145" y="0" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" text-anchor="end">88%</text>
           <path d="M0 14H145" stroke="#D6ECFF" stroke-width="6" stroke-linecap="round"/>
-          <path d="M0 14H97" stroke="#5DA8E8" stroke-width="6" stroke-linecap="round"/>
+          <path d="M0 14H128" stroke="#5DA8E8" stroke-width="6" stroke-linecap="round"/>
         </g>
         <g transform="translate(248 288)">
           <text x="0" y="0" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12">JavaScript</text>
-          <text x="145" y="0" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" text-anchor="end">19%</text>
+          <text x="145" y="0" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" text-anchor="end">9%</text>
           <path d="M0 14H145" stroke="#D6ECFF" stroke-width="6" stroke-linecap="round"/>
-          <path d="M0 14H28" stroke="#5FBF9F" stroke-width="6" stroke-linecap="round"/>
+          <path d="M0 14H13" stroke="#5FBF9F" stroke-width="6" stroke-linecap="round"/>
         </g>
         <g transform="translate(438 288)">
-          <text x="0" y="0" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12">TypeScript</text>
-          <text x="145" y="0" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" text-anchor="end">14%</text>
+          <text x="0" y="0" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12">Rust</text>
+          <text x="145" y="0" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" text-anchor="end">1%</text>
           <path d="M0 14H145" stroke="#D6ECFF" stroke-width="6" stroke-linecap="round"/>
-          <path d="M0 14H20" stroke="#E0B84D" stroke-width="6" stroke-linecap="round"/>
+          <path d="M0 14H1" stroke="#E0B84D" stroke-width="6" stroke-linecap="round"/>
         </g>
         <g transform="translate(640 156)">
           <circle r="112" stroke="#D6ECFF" stroke-width="1.5"/>
@@ -74,6 +74,98 @@
           <circle r="8" fill="#0B132B"/>
           <circle r="3" fill="#EAF6FF"/>
         </g>
-        <text x="640" y="302" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" text-anchor="middle">still mapping things out</text>
+        <text x="640" y="302" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" text-anchor="middle">慢慢把地图补全</text>
+      </g>
+  <g id="timeline" transform="translate(0 560)">
+        <path d="M0 0H860V180H0Z" fill="#EAF6FF"/>
+        <path d="M28 0V180H832V0" stroke="#8FBCE6"/>
+        <text x="60" y="48" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="750">最近在做</text>
+        <path d="M92 120H768" stroke="#D6ECFF" stroke-width="3" stroke-linecap="round"/>
+
+        <g transform="translate(102 120)">
+          <rect x="-10" y="-10" width="20" height="20" fill="#5DA8E8"/>
+          <circle r="4" fill="#EAF6FF"/>
+          <text x="0" y="42" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="650" text-anchor="middle">AI / Agent</text>
+        </g>
+        <g transform="translate(292 120)">
+          <rect x="-10" y="-10" width="20" height="20" fill="#5FBF9F"/>
+          <circle r="4" fill="#EAF6FF"/>
+          <text x="0" y="42" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="650" text-anchor="middle">Transformer</text>
+        </g>
+        <g transform="translate(482 120)">
+          <rect x="-10" y="-10" width="20" height="20" fill="#E0B84D"/>
+          <circle r="4" fill="#EAF6FF"/>
+          <text x="0" y="42" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="650" text-anchor="middle">Frontend</text>
+        </g>
+        <g transform="translate(672 120)">
+          <rect x="-10" y="-10" width="20" height="20" fill="#8FBCE6"/>
+          <circle r="4" fill="#EAF6FF"/>
+          <text x="0" y="42" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="650" text-anchor="middle">算法笔记</text>
+        </g>
+      </g>
+  <g id="skills" transform="translate(0 740)">
+        <path d="M0 0H860V250H0Z" fill="#F7FBFF"/>
+        <path d="M28 0V250H832V0" stroke="#8FBCE6"/>
+        <text x="60" y="38" fill="#0B132B" font-family="Inter, 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="750">技术地图</text>
+        <text x="60" y="218" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12">things I keep coming back to</text>
+
+        <g>
+          <path d="M74 78V164" stroke="#8FBCE6"/>
+          <rect x="60" y="58" width="116" height="30" fill="#5DA8E8"/>
+          <text x="74" y="79" fill="#0B132B" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700">AI</text>
+
+          <path d="M74 104H90" stroke="#8FBCE6"/>
+          <circle cx="94" cy="104" r="3" fill="#5DA8E8"/>
+          <text x="108" y="110" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13">LLM</text>
+          <path d="M74 134H90" stroke="#8FBCE6"/>
+          <circle cx="94" cy="134" r="3" fill="#5DA8E8"/>
+          <text x="108" y="140" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13">Agent</text>
+          <path d="M74 164H90" stroke="#8FBCE6"/>
+          <circle cx="94" cy="164" r="3" fill="#5DA8E8"/>
+          <text x="108" y="170" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13">Transformer</text>
+        </g>
+        <g>
+          <path d="M332 78V164" stroke="#8FBCE6"/>
+          <rect x="318" y="58" width="116" height="30" fill="#5FBF9F"/>
+          <text x="332" y="79" fill="#0B132B" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700">Frontend</text>
+
+          <path d="M332 104H348" stroke="#8FBCE6"/>
+          <circle cx="352" cy="104" r="3" fill="#5FBF9F"/>
+          <text x="366" y="110" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13">Vue</text>
+          <path d="M332 134H348" stroke="#8FBCE6"/>
+          <circle cx="352" cy="134" r="3" fill="#5FBF9F"/>
+          <text x="366" y="140" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13">JavaScript</text>
+          <path d="M332 164H348" stroke="#8FBCE6"/>
+          <circle cx="352" cy="164" r="3" fill="#5FBF9F"/>
+          <text x="366" y="170" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13">TypeScript</text>
+        </g>
+        <g>
+          <path d="M590 78V194" stroke="#8FBCE6"/>
+          <rect x="576" y="58" width="116" height="30" fill="#E0B84D"/>
+          <text x="590" y="79" fill="#0B132B" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700">Code</text>
+
+          <path d="M590 104H606" stroke="#8FBCE6"/>
+          <circle cx="610" cy="104" r="3" fill="#E0B84D"/>
+          <text x="624" y="110" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13">Python</text>
+          <path d="M590 134H606" stroke="#8FBCE6"/>
+          <circle cx="610" cy="134" r="3" fill="#E0B84D"/>
+          <text x="624" y="140" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13">C / C++</text>
+          <path d="M590 164H606" stroke="#8FBCE6"/>
+          <circle cx="610" cy="164" r="3" fill="#E0B84D"/>
+          <text x="624" y="170" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13">Node.js</text>
+          <path d="M590 194H606" stroke="#8FBCE6"/>
+          <circle cx="610" cy="194" r="3" fill="#E0B84D"/>
+          <text x="624" y="200" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13">Git</text>
+        </g>
+      </g>
+  <g id="footer" transform="translate(0 990)">
+        <path d="M0 0H860V72C860 84.15 850.15 94 838 94H22C9.85 94 0 84.15 0 72V0Z" fill="#D6ECFF"/>
+        <path d="M28 0H832V66H28V0Z" fill="#EAF6FF" stroke="#8FBCE6"/>
+        <text x="60" y="50" fill="#0B132B" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="700">Jian1202</text>
+        <path d="M162 45H590" stroke="#D6ECFF" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="622" cy="45" r="6" fill="#5DA8E8"/>
+        <circle cx="646" cy="45" r="6" fill="#5FBF9F"/>
+        <circle cx="670" cy="45" r="6" fill="#E0B84D"/>
+        <text x="800" y="50" fill="#5E7FA3" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" text-anchor="end">github</text>
       </g>
 </svg>

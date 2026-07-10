@@ -19,6 +19,9 @@ module.exports = {
     width: 860,
     headerHeight: 210,
     radarHeight: 350,
+    timelineHeight: 180,
+    skillsHeight: 250,
+    footerHeight: 94,
     gutter: 28,
   },
 };
