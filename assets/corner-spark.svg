@@ -1,9 +1,6 @@
-<svg width="180" height="88" viewBox="0 0 180 88" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="小火花装饰">
-  <path d="M116 20H150V54H116V20Z" fill="#151B20" stroke="#2D343B"/>
-  <path d="M133 29V45" stroke="#E0B84D" stroke-width="3" stroke-linecap="round"/>
-  <path d="M125 37H141" stroke="#E0B84D" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="93" cy="30" r="4" fill="#5DA8E8"/>
-  <circle cx="158" cy="62" r="5" fill="#5FBF9F"/>
-  <circle cx="71" cy="59" r="3" fill="#E0B84D"/>
-  <path d="M38 48C53 27 72 23 91 33C107 41 119 62 148 58" stroke="#2D343B" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 7"/>
+<svg width="180" height="88" viewBox="0 0 180 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M116 20H150V54H116V20Z" fill="#EAF6FF" stroke="#8FBCE6"/>
+<path d="M133 29V45M125 37H141" stroke="#E0B84D" stroke-width="3" stroke-linecap="round"/>
+<circle cx="93" cy="30" r="4" fill="#5DA8E8"/><circle cx="158" cy="62" r="5" fill="#5FBF9F"/><circle cx="71" cy="59" r="3" fill="#E0B84D"/>
+<path d="M38 48C53 27 72 23 91 33C107 41 119 62 148 58" stroke="#8FBCE6" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 7"/>
 </svg>
