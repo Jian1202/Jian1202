@@ -25,10 +25,10 @@ sections:
       eyebrow: CURRENT MISSION
       tracks:
         - name: 持续学习AI相关知识~
-          items: [Transformer, LLM, DL, ML, Agent, ……]
+          items: [Transformer,LLM,DL,ML,Agent,……]
           color: blue
         - name: 学一些工程知识~
-          items: [Frontend, AI Coding, CV, ……]
+          items: [Frontend,AI Coding,CV,……]
           color: green
 
   - id: timeline
@@ -119,4 +119,4 @@ sections:
     variant: default
     data:
       handle: Jian1202
-      slogan:       Curiosity, the power to change.
+      slogan: Curiosity, to change the world.
