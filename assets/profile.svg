@@ -41,10 +41,6 @@
       </g>
       <g transform="translate(270 154)">
         <circle cx="0" cy="0" r="4" fill="#5DA8E8"/>
-        <text x="16" y="5" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13">DL</text>
-      </g>
-      <g transform="translate(362 154)">
-        <circle cx="0" cy="0" r="4" fill="#5DA8E8"/>
         <text x="16" y="5" fill="#345B7C" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="13">Agent</text>
       </g>
     </g>
