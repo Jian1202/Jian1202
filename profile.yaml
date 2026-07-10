@@ -12,8 +12,8 @@ sections:
     enabled: true
     variant: default
     data:
-      title: 渡的小窝 ~ ^o^ ~
-      greeting: 哈喽呀，这里是渡的小窝哦~
+      title: 渡的小窝 
+      greeting: 哈喽呀，这里是渡的小窝哦 ~ ^o^ ~
       subtitle: AI / Frontend / Thinking
 
   - id: mission
@@ -25,7 +25,7 @@ sections:
       eyebrow: CURRENT MISSION
       tracks:
         - name: 持续学习AI相关知识~
-          items: [Transformer, LLM, Deep Learning, Machine Learning, Agent, ……]
+          items: [Transformer, LLM, DL, ML, Agent, ……]
           color: blue
         - name: 学一些工程知识~
           items: [Frontend, AI Coding, CV, ……]
@@ -43,10 +43,10 @@ sections:
           focus: Frontend
           color: green
         - year: "2026"
-          focus: AI -> Transformer, LLM, Deep Learning, Machine Learning, Agent
+          focus: AI
           color: blue
         - year: Future
-          focus: Thinking -> ……
+          focus: Thinking……
           color: gold
 
   - id: radar
@@ -86,10 +86,10 @@ sections:
       eyebrow: SKILL TREE
       trees:
         - name: AI
-          items: [Machine Learning, Deep Learning, Transformer, Agent]
+          items: [Machine Learning, Deep Learning, Transformer, Agent, ……]
           color: blue
         - name: Engineering
-          items: [Frontend, Git, System]
+          items: [Frontend, AI Coding, CV, ……]
           color: green
 
   - id: projects
@@ -105,7 +105,7 @@ sections:
           tags: [LLM, Agent]
           color: blue
         - name: transformer-explainer-cn
-          description: Transformer 可视化 explainer 汉化
+          description: Transformer 可视化解释器汉化
           tags: [Transformer, Education, Visualization]
           color: gold
         - name: grape-robot
@@ -119,4 +119,4 @@ sections:
     variant: default
     data:
       handle: Jian1202
-      slogan: Curiosity, the power to change.
+      slogan:       Curiosity, the power to change.
