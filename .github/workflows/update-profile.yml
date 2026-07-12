@@ -28,8 +28,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Jian1202/profile-lab
-          # Profile Lab v0.1.0. SHA pinned for reproducible generation.
-          ref: 68e1b5613cc9dea5e56b01f4f42c4b2bda554512
+          # Profile Lab v0.1.2. SHA pinned for reproducible generation.
+          ref: 168471fa77278b6e0966646f9fc2349bf7d412de
           path: profile-lab
 
       - name: Setup Node.js

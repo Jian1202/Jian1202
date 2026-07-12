@@ -77,6 +77,6 @@ node ..\profile-lab\bin\profile-lab.js preview ^
 - `profile.yaml` 发生变化
 - 生成工作流自身发生变化
 
-工作流固定使用 Profile Lab `v0.1.0` 对应的完整 commit SHA。生成结果没有变化时不会创建提交，也不会监听 `assets/profile.svg`，因此不会形成提交循环。
+工作流固定使用 Profile Lab `v0.1.2` 对应的完整 commit SHA。生成结果没有变化时不会创建提交，也不会监听 `assets/profile.svg`，因此不会形成提交循环。
 
 升级 Profile Lab 时，需要显式更新工作流中的固定版本，并重新完成配置校验、SVG 哈希比较、视觉确认和 Actions 验证。
